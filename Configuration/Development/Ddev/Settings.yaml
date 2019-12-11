@@ -14,3 +14,10 @@ Neos:
     http:
       trustedProxies:
         proxies: "*"
+t3n:
+  Neos:
+    Debug:
+      enabled: false      
+      sql:
+        # Set when a query should be considered as slow query. In ms
+        slowQueryAfter: 10

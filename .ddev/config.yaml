@@ -1,7 +1,7 @@
 APIVersion: v1.11.2
 name: cms-neos-blog
 type: php
-docroot: ""
+docroot: Web
 php_version: "7.2"
 webserver_type: nginx-fpm
 router_http_port: "80"
