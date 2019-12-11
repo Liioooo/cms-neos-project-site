@@ -1,9 +1,10 @@
+.idea
+
 /Build/Behat/*
 /Build/PhpCodesniffer/*
 /Build/BuildEssentials
 /Build/Reports
 /Build/Resources
-/Configuration/
 /Data/
 /Packages/
 /Web/
@@ -18,3 +19,5 @@
 /Tests/Selenium/settings.xml
 Build/Resources/Java/selenium-server-standalone*
 /"
+
+*.yaml.example
