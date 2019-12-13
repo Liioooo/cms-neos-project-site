@@ -3,7 +3,7 @@ prototype(Liiioooo.DAProject:Document.Page) < prototype(Neos.Fusion:Component) {
     mainContent = Liiioooo.DAProject:Document.Fragment.Content.Main
     footerContent = Liiioooo.DAProject:Document.Fragment.Content.Footer
 
-    bodyClass = ${q(node).parents().count() >= 1 && q(node).children('[instanceof Neos.Neos:Document]').filter('[_hiddenInIndex=false]').count() > 0 ? 'has-subpages' : null}
+    bodyClass = 'body'
 
     renderer = Liiioooo.DAProject:Document.Base {
         bodyClass = ${props.bodyClass}

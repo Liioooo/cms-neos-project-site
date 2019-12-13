@@ -1,0 +1,8 @@
+prototype(Liiioooo.DAProject:Document.NotFoundPage) < prototype(Liiioooo.DAProject:Document.Page) {
+
+    prototype(Neos.Neos:Page) {
+        httpResponseHead {
+            statusCode = 404
+        }
+    }
+}

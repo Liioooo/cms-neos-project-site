@@ -1,16 +1,27 @@
 Neos:
   Neos:
-    nodeTypes:
-      groups:
-        section:
-          position: 1
-          label: 'Section'
-    #      label: 'Neos.Neos:Main:nodeTypes.groups.structure'
-          collapsed: false
-        general:
-          position: 2
-          collapsed: true
-        structure:
-          collapsed: true
-        plugins:
-          collapsed: true
+    userInterface:
+      translation:
+        autoInclude:
+          Neos.Demo:
+            - Main
+            - 'NodeTypes/*'
+
+  ContentRepository:
+    contentDimensions:
+      language:
+        label: 'Language'
+        icon: icon-language
+        default: en
+        defaultPreset: en
+        presets:
+          en:
+            label: 'English'
+            values:
+              - en
+            uriSegment: en
+          de:
+            label: 'German'
+            values:
+              - de
+            uriSegment: de
