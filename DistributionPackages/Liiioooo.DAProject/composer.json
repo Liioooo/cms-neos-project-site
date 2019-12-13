@@ -1,0 +1,22 @@
+{
+    "description": "",
+    "type": "neos-site",
+    "require": {
+        "neos/neos": "*",
+        "neos/nodetypes": "*"
+    },
+    "suggest": {
+        "neos/seo": "*"
+    },
+    "name": "liiioooo/daproject",
+    "autoload": {
+        "psr-4": {
+            "Liiioooo\\DAProject\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Liiioooo.DAProject"
+        }
+    }
+}

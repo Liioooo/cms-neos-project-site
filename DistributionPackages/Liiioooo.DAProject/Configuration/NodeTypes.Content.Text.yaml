@@ -1,0 +1,8 @@
+'Liiioooo.DAProject:Content.Text':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.NodeTypes.BaseMixins:TextMixin': true
+  ui:
+    label: text
+    icon: 'icon-file-text'
+    position: 200

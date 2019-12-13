@@ -17,8 +17,6 @@
     "require": {
         "neos/neos": "~5.0.0",
         "neos/site-kickstarter": "~5.0.0",
-
-        "neos/demo": "~6.0",
         "neos/neos-ui": "~5.0",
         "neos/seo": "~3.0",
         "neos/fusion-afx": "~1.3",
@@ -27,7 +25,8 @@
         "neos/redirecthandler-ui": "~2.0",
         
         "neos/setup": "^4.1",
-        "neos/neos-setup": "^1.0"
+        "neos/neos-setup": "^1.0",
+        "liiioooo/daproject": "@dev"
     },
     "require-dev": {
         "neos/buildessentials": "^6.0",

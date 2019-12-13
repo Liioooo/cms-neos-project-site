@@ -1,0 +1,12 @@
+
+Neos:
+  Imagine:
+    driver: Imagick
+  Flow:
+    persistence:
+      backendOptions:
+        driver: pdo_mysql
+        dbname: db
+        user: db
+        password: db
+        host: 127.0.0.1

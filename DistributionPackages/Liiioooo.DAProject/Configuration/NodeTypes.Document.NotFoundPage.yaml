@@ -1,0 +1,24 @@
+'Liiioooo.DAProject:Document.NotFoundPage':
+  superTypes:
+    'Liiioooo.DAProject:Document.Page': true
+  ui:
+    icon: 'times'
+    label: 'NotFoundPage'
+  constraints:
+    nodeTypes:
+      'Neos.Neos:Document': false
+  properties:
+    title:
+      defaultValue: 'Not Found'
+
+    uriPathSegment:
+      defaultValue: 'notfound'
+
+    _hidden:
+      defaultValue: true
+
+    _hiddenInIndex:
+      defaultValue: true
+
+    metaRobotsNoindex:
+      defaultValue: true

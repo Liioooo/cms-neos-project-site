@@ -1,0 +1,31 @@
+prototype(Liiioooo.DAProject:Document.Page) < prototype(Neos.Fusion:Component) {
+
+    mainContent = Liiioooo.DAProject:Document.Fragment.Content.Main
+    footerContent = Liiioooo.DAProject:Document.Fragment.Content.Footer
+
+    bodyClass = ${q(node).parents().count() >= 1 && q(node).children('[instanceof Neos.Neos:Document]').filter('[_hiddenInIndex=false]').count() > 0 ? 'has-subpages' : null}
+
+    renderer = Liiioooo.DAProject:Document.Base {
+        bodyClass = ${props.bodyClass}
+        body = afx`
+            <div class="top-navigation-wrap">
+                <div class="container">
+                </div>
+            </div>
+
+            <div class="container">
+                {props.mainContent}
+            </div>
+
+            <footer role="navigation" class="navbar navbar-default">
+                <div class="panel panel-default">
+                    <div class="panel-footer">
+                        <div class="container">
+                            {props.footerContent}
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        `
+    }
+}

@@ -1,0 +1,12 @@
+'Liiioooo.DAProject:Document.Homepage':
+  superTypes:
+    'Liiioooo.DAProject:Document.Page': true
+  ui:
+    icon: 'globe'
+    label: 'Home'
+  childNodes:
+    'notfound':
+      type: 'Liiioooo.DAProject:Document.NotFoundPage'
+    'footer':
+      position: 'end'
+      type: 'Liiioooo.DAProject:Collection.Content.Footer'

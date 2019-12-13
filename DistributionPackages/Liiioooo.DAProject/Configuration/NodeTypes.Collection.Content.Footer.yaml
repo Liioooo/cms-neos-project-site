@@ -1,0 +1,9 @@
+'Liiioooo.DAProject:Collection.Content.Footer':
+  superTypes:
+    Neos.Neos:ContentCollection: true
+  constraints:
+    nodeTypes:
+      '*': false
+      'Liiioooo.DAProject:Content.Headline': true
+      'Liiioooo.DAProject:Content.Text': true
+      'Liiioooo.DAProject:Content.Image': true

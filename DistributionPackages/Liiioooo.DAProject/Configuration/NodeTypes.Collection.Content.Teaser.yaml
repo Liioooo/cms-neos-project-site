@@ -1,0 +1,12 @@
+##
+# The teaser collection that allows only specific contents
+#
+'Liiioooo.DAProject:Collection.Content.Teaser':
+  superTypes:
+    Neos.Neos:ContentCollection: true
+  constraints:
+    nodeTypes:
+      '*': false
+      'Liiioooo.DAProject:Content.Headline': true
+      'Liiioooo.DAProject:Content.Text': true
+      'Liiioooo.DAProject:Content.Image': true
