@@ -3,7 +3,7 @@ Neos:
     userInterface:
       translation:
         autoInclude:
-          Neos.Demo:
+          Liiioooo.DAProject:
             - Main
             - 'NodeTypes/*'
 

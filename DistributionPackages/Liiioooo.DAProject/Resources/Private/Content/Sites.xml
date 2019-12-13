@@ -3,7 +3,7 @@
  <site name="Liiioooo DA Project" state="1" siteResourcesPackageKey="Liiioooo.DAProject" siteNodeName="liiioooodaproject">
   <nodes formatVersion="2.0">
    <node nodeName="liiioooodaproject">
-    <variant workspace="live" nodeType="Liiioooo.DAProject:Document.HomePage" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">
+    <variant workspace="live" nodeType="Liiioooo.DAProject:Document.Homepage" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">
      <dimensions>
       <language>en</language>
      </dimensions>

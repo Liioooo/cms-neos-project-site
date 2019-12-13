@@ -1,7 +1,7 @@
 prototype(Liiioooo.DAProject:Document.Page) < prototype(Neos.Fusion:Component) {
 
     mainContent = Liiioooo.DAProject:Document.Fragment.Content.Main
-    footerContent = Liiioooo.DAProject:Document.Fragment.Content.Footer
+    #footerContent = Liiioooo.DAProject:Document.Fragment.Content.Footer
 
     bodyClass = 'body'
 

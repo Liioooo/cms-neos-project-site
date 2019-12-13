@@ -12,8 +12,6 @@
       'Neos.NodeTypes:Text': false
       'Neos.NodeTypes:Image': false
       'Neos.NodeTypes:TextWithImage': false
-      # Nodetypes of Neos.NodeTypes.Columnlayouts are not used in
-      # Neos.Demo and thus are disabled if they are present
       'Neos.NodeTypes.ColumnLayouts:TwoColumn': false
       'Neos.NodeTypes.ColumnLayouts:ThreeColumn': false
       'Neos.NodeTypes.ColumnLayouts:FourColumn': false
