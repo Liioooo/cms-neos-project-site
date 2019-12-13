@@ -1,3 +1,5 @@
 prototype(Liiioooo.DAProject:Document.Fragment.StyleSheets) < prototype(Neos.Fusion:Component) {
-    renderer = afx``
+    renderer = afx`
+        <Liiioooo.DAProject:Helper.StyleTag path="resource://Liiioooo.DAProject/Public/css/liiioooo-daproject.min.css" />
+    `
 }

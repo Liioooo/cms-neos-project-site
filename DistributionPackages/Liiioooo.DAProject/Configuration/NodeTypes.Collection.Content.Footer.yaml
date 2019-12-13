@@ -4,6 +4,4 @@
   constraints:
     nodeTypes:
       '*': false
-      'Liiioooo.DAProject:Content.Headline': true
-      'Liiioooo.DAProject:Content.Text': true
-      'Liiioooo.DAProject:Content.Image': true
+      'Liiioooo.DAProject:Constraint.UsableAsContent': true

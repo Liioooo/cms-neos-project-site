@@ -1,0 +1,25 @@
+{
+  "name": "cms-neos-project-site",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "styles:watch": "gulp styles:watch",
+    "styles": "gulp styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liiioooo/cms-neos-project-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Liiioooo/cms-neos-project-site/issues"
+  },
+  "homepage": "https://github.com/Liiioooo/cms-neos-project-site#readme",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.0"
+  }
+}

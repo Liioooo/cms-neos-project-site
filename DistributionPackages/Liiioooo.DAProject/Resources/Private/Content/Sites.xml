@@ -16,7 +16,18 @@
                         <uriPathSegment __type="string">home</uriPathSegment>
                     </properties>
                 </variant>
-                <node identifier="64159d9a-bf63-4469-a38b-13c6a6ae1e40" nodeName="main">
+                <node identifier="fd3e7100-e3e1-d936-b08b-fe8e9835816f" nodeName="footer">
+                    <variant sortingIndex="500" workspace="live" nodeType="Liiioooo.DAProject:Collection.Content.Footer" version="1" removed="" hidden="" hiddenInIndex="">
+                        <dimensions>
+                            <language>en</language>
+                        </dimensions>
+                        <accessRoles __type="array"/>
+                        <creationDateTime __type="object" __classname="DateTime">2019-12-13T18:51:04+00:00</creationDateTime>
+                        <lastModificationDateTime __type="object" __classname="DateTime">2019-12-13T18:51:04+00:00</lastModificationDateTime>
+                        <properties/>
+                    </variant>
+                </node>
+                <node identifier="54a4b6a3-76fb-953d-9015-d287f6a51196" nodeName="main">
                     <variant sortingIndex="200" workspace="live" nodeType="Liiioooo.DAProject:Collection.Content.Main" version="2" removed="" hidden="" hiddenInIndex="">
                         <dimensions>
                             <language>en</language>
@@ -28,7 +39,7 @@
                         <properties/>
                     </variant>
                 </node>
-                <node identifier="66797ced-59e9-4eb5-b0c3-0e6881bcf001" nodeName="notfound">
+                <node identifier="05fb854a-0ee3-0d23-5f83-58947b0fef88" nodeName="notfound">
                     <variant sortingIndex="400" workspace="live" nodeType="Liiioooo.DAProject:Document.NotFoundPage" version="2" removed="" hidden="" hiddenInIndex="1">
                         <dimensions>
                             <language>en</language>
