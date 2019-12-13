@@ -1,12 +1,3 @@
 'Liiioooo.DAProject:Collection.Content.Main':
   superTypes:
     Neos.Neos:ContentCollection: true
-  constraints:
-    nodeTypes:
-      'Neos.NodeTypes:Headline': false
-      'Neos.NodeTypes:Text': false
-      'Neos.NodeTypes:Image': false
-      'Neos.NodeTypes:TextWithImage': false
-      'Neos.NodeTypes.ColumnLayouts:TwoColumn': false
-      'Neos.NodeTypes.ColumnLayouts:ThreeColumn': false
-      'Neos.NodeTypes.ColumnLayouts:FourColumn': false

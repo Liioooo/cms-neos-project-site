@@ -1,49 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
- <site name="Liiioooo DA Project" state="1" siteResourcesPackageKey="Liiioooo.DAProject" siteNodeName="liiioooodaproject">
-  <nodes formatVersion="2.0">
-   <node nodeName="liiioooodaproject">
-    <variant workspace="live" nodeType="Liiioooo.DAProject:Document.Homepage" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">
-     <dimensions>
-      <language>en</language>
-     </dimensions>
-
-     <accessRoles __type="array"/>
-
-     <properties>
-      <title __type="string">Home</title>
-      <uriPathSegment __type="string">home</uriPathSegment>
-     </properties>
-    </variant>
-    <node nodeName="main">
-     <variant workspace="live" nodeType="Liiioooo.DAProject:Collection.Content.Main" sortingIndex="200" version="1" removed="" hidden="" hiddenInIndex="">
-      <dimensions>
-       <language>en</language>
-      </dimensions>
-      <accessRoles __type="array"/>
-     </variant>
-    </node>
-    <node nodeName="notfound">
-        <variant workspace="live" nodeType="Liiioooo.DAProject:Collection.Document.NotFoundPage" sortingIndex="1000" version="1" removed="" hidden="1" hiddenInIndex="1">
-             <dimensions>
-                 <language>en</language>
-             </dimensions>
-             <accessRoles __type="array"/>
-             <properties>
-                 <title __type="string">Not Found</title>
-                 <uriPathSegment __type="string">notfound</uriPathSegment>
-             </properties>
-         </variant>
-        <node nodeName="main">
-            <variant workspace="live" nodeType="Liiioooo.DAProject:Collection.Content.Main" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">
-                <dimensions>
-                    <language>en</language>
-                </dimensions>
-                <accessRoles __type="array"/>
-            </variant>
-        </node>
-     </node>
-   </node>
-  </nodes>
- </site>
+    <site name="Liiioooo DA Project" state="1" siteResourcesPackageKey="Liiioooo.DAProject" siteNodeName="liiioooodaproject">
+        <nodes formatVersion="2.0">
+            <node identifier="4c56f87d-de5f-4007-86bc-6ce33f6c79cb" nodeName="liiioooodaproject">
+                <variant sortingIndex="100" workspace="live" nodeType="Liiioooo.DAProject:Document.Homepage" version="2" removed="" hidden="" hiddenInIndex="">
+                    <dimensions>
+                        <language>en</language>
+                    </dimensions>
+                    <accessRoles __type="array"/>
+                    <creationDateTime __type="object" __classname="DateTime">2019-12-13T17:45:49+00:00</creationDateTime>
+                    <lastModificationDateTime __type="object" __classname="DateTime">2019-12-13T18:28:36+00:00</lastModificationDateTime>
+                    <lastPublicationDateTime __type="object" __classname="DateTime">2019-12-13T18:28:35+00:00</lastPublicationDateTime>
+                    <properties>
+                        <title __type="string">Home</title>
+                        <uriPathSegment __type="string">home</uriPathSegment>
+                    </properties>
+                </variant>
+                <node identifier="64159d9a-bf63-4469-a38b-13c6a6ae1e40" nodeName="main">
+                    <variant sortingIndex="200" workspace="live" nodeType="Liiioooo.DAProject:Collection.Content.Main" version="2" removed="" hidden="" hiddenInIndex="">
+                        <dimensions>
+                            <language>en</language>
+                        </dimensions>
+                        <accessRoles __type="array"/>
+                        <creationDateTime __type="object" __classname="DateTime">2019-12-13T17:45:49+00:00</creationDateTime>
+                        <lastModificationDateTime __type="object" __classname="DateTime">2019-12-13T18:28:36+00:00</lastModificationDateTime>
+                        <lastPublicationDateTime __type="object" __classname="DateTime">2019-12-13T18:28:35+00:00</lastPublicationDateTime>
+                        <properties/>
+                    </variant>
+                </node>
+                <node identifier="66797ced-59e9-4eb5-b0c3-0e6881bcf001" nodeName="notfound">
+                    <variant sortingIndex="400" workspace="live" nodeType="Liiioooo.DAProject:Document.NotFoundPage" version="2" removed="" hidden="" hiddenInIndex="1">
+                        <dimensions>
+                            <language>en</language>
+                        </dimensions>
+                        <accessRoles __type="array"/>
+                        <creationDateTime __type="object" __classname="DateTime">2019-12-13T18:27:04+00:00</creationDateTime>
+                        <lastModificationDateTime __type="object" __classname="DateTime">2019-12-13T18:27:26+00:00</lastModificationDateTime>
+                        <lastPublicationDateTime __type="object" __classname="DateTime">2019-12-13T18:27:26+00:00</lastPublicationDateTime>
+                        <properties>
+                            <uriPathSegment __type="string">404</uriPathSegment>
+                            <metaRobotsNoindex __type="boolean">1</metaRobotsNoindex>
+                            <title __type="string">404</title>
+                        </properties>
+                    </variant>
+                    <node identifier="18a40aa1-c194-5edc-b047-127cd0edc2c9" nodeName="main">
+                        <variant sortingIndex="100" workspace="live" nodeType="Liiioooo.DAProject:Collection.Content.Main" version="2" removed="" hidden="" hiddenInIndex="">
+                            <dimensions>
+                                <language>en</language>
+                            </dimensions>
+                            <accessRoles __type="array"/>
+                            <creationDateTime __type="object" __classname="DateTime">2019-12-13T18:27:04+00:00</creationDateTime>
+                            <lastModificationDateTime __type="object" __classname="DateTime">2019-12-13T18:27:26+00:00</lastModificationDateTime>
+                            <lastPublicationDateTime __type="object" __classname="DateTime">2019-12-13T18:27:26+00:00</lastPublicationDateTime>
+                            <properties/>
+                        </variant>
+                        <node identifier="ac5d60da-9275-40fb-8457-e5d4f75c797e" nodeName="node-n4shilgpr0c3f">
+                            <variant sortingIndex="100" workspace="live" nodeType="Liiioooo.DAProject:Content.Headline" version="3" removed="" hidden="" hiddenInIndex="">
+                                <dimensions>
+                                    <language>en</language>
+                                </dimensions>
+                                <accessRoles __type="array"/>
+                                <creationDateTime __type="object" __classname="DateTime">2019-12-13T18:27:17+00:00</creationDateTime>
+                                <lastModificationDateTime __type="object" __classname="DateTime">2019-12-13T18:27:26+00:00</lastModificationDateTime>
+                                <lastPublicationDateTime __type="object" __classname="DateTime">2019-12-13T18:27:26+00:00</lastPublicationDateTime>
+                                <properties>
+                                    <title __type="string">&lt;h1&gt;Not found&lt;/h1&gt;</title>
+                                </properties>
+                            </variant>
+                        </node>
+                    </node>
+                </node>
+            </node>
+        </nodes>
+    </site>
 </root>

@@ -4,11 +4,16 @@
   ui:
     icon: 'icon-file'
     label: 'Page'
-  childNodes:
-    main:
-      type: 'Liiioooo.DAProject:Content.Main'
   constraints:
     nodeTypes:
       'Neos.NodeTypes:Page': false
       'Liiioooo.DAProject:Document.Homepage': false
       'Liiioooo.DAProject:Document.NotFoundPage': false
+      'Liiioooo.DAProject:Content.Main': true
+  childNodes:
+    main:
+      type: 'Liiioooo.DAProject:Collection.Content.Main'
+      constraints:
+        nodeTypes:
+          '*': false
+          'Liiioooo.DAProject:Constraint.UsableAsContent': true

@@ -3,6 +3,7 @@
     'Neos.Neos:Content': true
     'Neos.NodeTypes.BaseMixins:ImageMixin': true
     'Neos.NodeTypes.BaseMixins:ImageCaptionMixin': true
+    'Liiioooo.DAProject:Constraint.UsableAsContent': true
   ui:
     label: 'Image'
     icon: 'icon-picture'

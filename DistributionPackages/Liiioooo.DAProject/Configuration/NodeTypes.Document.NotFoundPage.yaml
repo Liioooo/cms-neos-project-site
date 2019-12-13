@@ -3,7 +3,7 @@
     'Liiioooo.DAProject:Document.Page': true
   ui:
     icon: 'times'
-    label: 'NotFoundPage'
+    label: 'Not Found Page'
   constraints:
     nodeTypes:
       'Neos.Neos:Document': false
@@ -15,7 +15,7 @@
       defaultValue: 'notfound'
 
     _hidden:
-      defaultValue: true
+      defaultValue: false
 
     _hiddenInIndex:
       defaultValue: true

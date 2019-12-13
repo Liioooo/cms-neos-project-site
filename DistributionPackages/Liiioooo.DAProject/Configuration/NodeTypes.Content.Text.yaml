@@ -2,7 +2,8 @@
   superTypes:
     'Neos.Neos:Content': true
     'Neos.NodeTypes.BaseMixins:TextMixin': true
+    Liiioooo.DAProject:Constraint.UsableAsContent: true
   ui:
-    label: text
+    label: Text
     icon: 'icon-file-text'
     position: 200

@@ -2,6 +2,7 @@
   superTypes:
     'Neos.Neos:Content': true
     'Neos.NodeTypes.BaseMixins:TitleMixin': true
+    'Liiioooo.DAProject:Constraint.UsableAsContent': true
   ui:
     label: 'Headline'
     icon: 'icon-header'

@@ -7,6 +7,3 @@
   childNodes:
     'notfound':
       type: 'Liiioooo.DAProject:Document.NotFoundPage'
-    'footer':
-      position: 'end'
-      type: 'Liiioooo.DAProject:Collection.Content.Footer'
