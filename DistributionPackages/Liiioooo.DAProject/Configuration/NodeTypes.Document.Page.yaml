@@ -7,12 +7,8 @@
   childNodes:
     main:
       type: 'Liiioooo.DAProject:Content.Main'
-    'teaser':
-      type: 'Liiioooo.DAProject:Collection.Content.Teaser'
   constraints:
     nodeTypes:
-      # Neos.NodeTypes is deprecated and we prevent adding documents from this package
       'Neos.NodeTypes:Page': false
-      # Homepage and NotFoundPage are not meant to be added by editors
       'Liiioooo.DAProject:Document.Homepage': false
       'Liiioooo.DAProject:Document.NotFoundPage': false
