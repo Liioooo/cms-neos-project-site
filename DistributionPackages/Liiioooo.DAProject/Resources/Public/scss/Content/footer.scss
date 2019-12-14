@@ -4,4 +4,11 @@
     height: 10rem;
     background-color: $primaryColor;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        margin: 0 2rem;
+    }
 }

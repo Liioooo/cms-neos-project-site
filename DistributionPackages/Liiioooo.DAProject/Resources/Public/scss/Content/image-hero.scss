@@ -5,11 +5,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $primaryColor;
+    background-image: linear-gradient($primaryColor, lighten($primaryColor, 30));
 
     img {
         width: 1000px;
-        margin: 5rem 0;
+        margin: 12rem 0;
 
         @media screen and (max-width: 1200px) {
             width: 800px;
@@ -19,9 +19,11 @@
         }
         @media screen and (max-width: 700px) {
             width: 500px;
+            margin: 8rem 0;
         }
         @media screen and (max-width: 600px) {
             width: 80%;
+            margin: 6rem 0;
         }
     }
 }

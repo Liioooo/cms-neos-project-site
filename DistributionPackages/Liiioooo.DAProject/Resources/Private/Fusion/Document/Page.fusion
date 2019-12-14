@@ -1,6 +1,7 @@
 prototype(Liiioooo.DAProject:Document.Page) < prototype(Neos.Fusion:Component) {
 
     menu = Liiioooo.DAProject:Document.Fragment.Menu
+    headerContent = Liiioooo.DAProject:Document.Fragment.Content.Header
     mainContent = Liiioooo.DAProject:Document.Fragment.Content.Main
     footerContent = Liiioooo.DAProject:Document.Fragment.Content.Footer
 
@@ -9,11 +10,16 @@ prototype(Liiioooo.DAProject:Document.Page) < prototype(Neos.Fusion:Component) {
     renderer = Liiioooo.DAProject:Document.Base {
         bodyClass = ${props.bodyClass}
         body = afx`
-            {props.menu}
-            <main>
-                {props.mainContent}
-            </main>
-            {props.footerContent}
+            <div class="menu-and-content">
+                {props.menu}
+                {props.headerContent}
+                <main class="m-4">
+                    {props.mainContent}
+                </main>
+            </div>
+            <footer>
+                {props.footerContent}
+            </footer>
         `
     }
 }

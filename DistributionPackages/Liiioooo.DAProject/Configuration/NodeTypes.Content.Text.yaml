@@ -2,8 +2,31 @@
   superTypes:
     'Neos.Neos:Content': true
     'Neos.NodeTypes.BaseMixins:TextMixin': true
-    Liiioooo.DAProject:Constraint.UsableAsContent: true
+    'Liiioooo.DAProject:Constraint.UsableAsContent': true
   ui:
     label: Text
     icon: 'icon-file-text'
     position: 200
+    inspector:
+      groups:
+        general:
+          label: 'General'
+  properties:
+    'alignment':
+      type: string
+      defaultValue: 'center'
+      ui:
+        label: 'Alignment'
+        reloadIfChanged: true
+        inspector:
+          group: 'general'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              center:
+                label: 'Center'
+              left:
+                label: 'Left'
+              right:
+                label: 'Right'
+

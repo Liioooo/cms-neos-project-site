@@ -1,6 +1,11 @@
 prototype(Liiioooo.DAProject:Content.Footer) < prototype(Neos.Neos:ContentComponent) {
+    footerLinks = ${q(node).children()}
+
     renderer = afx`
-        <footer class="footer">
-        </footer>
+        <div class="footer">
+            <Neos.Fusion:Loop items={props.footerLinks}>
+               <a href={q(item).property('targetUrl')} target={q(item).property('newWindow') == true ? '_blank' : '_self'}>{q(item).property('label')}</a>
+            </Neos.Fusion:Loop>
+        </div>
     `
 }

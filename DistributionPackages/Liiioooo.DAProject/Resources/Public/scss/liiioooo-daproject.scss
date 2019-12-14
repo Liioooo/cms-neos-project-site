@@ -3,7 +3,11 @@
 @import "../../../../../node_modules/bootswatch/dist/lux/bootswatch";
 
 
+@import "Document/page";
+@import "Document/Fragment/menu";
 
 @import "Content/footer";
 @import "Content/image-hero";
-@import "Document/Fragment/menu";
+@import "Content/headline";
+@import "Content/text";
+

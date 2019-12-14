@@ -1,0 +1,16 @@
+prototype(Liiioooo.DAProject:Content.Text) < prototype(Neos.Neos:ContentComponent) {
+    @context.text = Neos.Neos:Editable {
+        property = 'text'
+    }
+
+    renderer = Neos.Fusion:Tag {
+        tagName = 'div'
+        attributes = Neos.Fusion:Attributes {
+            class = Neos.Fusion:DataStructure {
+                class1 = 'text'
+                class2 = ${'text-' + q(node).property('alignment')}
+            }
+        }
+        content = ${text}
+    }
+}

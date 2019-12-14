@@ -5,3 +5,6 @@
     label: 'Footer Content'
     icon: 'align-justify'
     position: 100
+  constraints:
+    nodeTypes:
+      'Liiioooo.DAProject:Content.FooterLink': true

@@ -1,0 +1,5 @@
+prototype(Liiioooo.DAProject:Document.Fragment.Content.Header) < prototype(Neos.Fusion:Component) {
+    renderer = Neos.Neos:ContentCollection {
+        nodePath = 'header'
+    }
+}

@@ -16,6 +16,15 @@
                         <uriPathSegment __type="string">home</uriPathSegment>
                     </properties>
                 </variant>
+                <node nodeName="header">
+                    <variant sortingIndex="100" workspace="live" nodeType="Liiioooo.DAProject:Collection.Content.Header" version="1" removed="" hidden="" hiddenInIndex="">
+                        <dimensions>
+                            <language>en</language>
+                        </dimensions>
+                        <accessRoles __type="array"/>
+                        <properties/>
+                    </variant>
+                </node>
                 <node identifier="fd3e7100-e3e1-d936-b08b-fe8e9835816f" nodeName="footer">
                     <variant sortingIndex="500" workspace="live" nodeType="Liiioooo.DAProject:Collection.Content.Footer" version="1" removed="" hidden="" hiddenInIndex="">
                         <dimensions>
@@ -54,6 +63,15 @@
                             <title __type="string">404</title>
                         </properties>
                     </variant>
+                    <node nodeName="header">
+                        <variant sortingIndex="80" workspace="live" nodeType="Liiioooo.DAProject:Collection.Content.Header" version="1" removed="" hidden="" hiddenInIndex="">
+                            <dimensions>
+                                <language>en</language>
+                            </dimensions>
+                            <accessRoles __type="array"/>
+                            <properties/>
+                        </variant>
+                    </node>
                     <node identifier="18a40aa1-c194-5edc-b047-127cd0edc2c9" nodeName="main">
                         <variant sortingIndex="100" workspace="live" nodeType="Liiioooo.DAProject:Collection.Content.Main" version="2" removed="" hidden="" hiddenInIndex="">
                             <dimensions>

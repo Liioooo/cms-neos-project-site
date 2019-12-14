@@ -7,11 +7,35 @@
     label: 'Headline'
     icon: 'icon-header'
     position: 100
+    inspector:
+      groups:
+        general:
+          label: 'General'
   properties:
     'title':
       ui:
         inline:
           editorOptions:
             formatting:
+              h1: true
+              h2: true
+              h3: true
               h4: true
               h5: true
+    'alignment':
+      type: string
+      defaultValue: 'center'
+      ui:
+        label: 'Alignment'
+        reloadIfChanged: true
+        inspector:
+          group: 'general'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              center:
+                label: 'Center'
+              left:
+                label: 'Left'
+              right:
+                label: 'Right'

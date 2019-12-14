@@ -1,7 +1,6 @@
 'Liiioooo.DAProject:Content.ImageHero':
   superTypes:
     'Neos.Neos:Content': true
-    'Liiioooo.DAProject:Constraint.UsableAsContent': true
   ui:
     label: 'Image Hero'
     icon: 'icon-header'

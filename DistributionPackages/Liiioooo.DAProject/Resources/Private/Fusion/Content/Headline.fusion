@@ -1,11 +1,16 @@
 prototype(Liiioooo.DAProject:Content.Headline) < prototype(Neos.Neos:ContentComponent) {
-    title = Neos.Neos:Editable {
+    @context.title = Neos.Neos:Editable {
         property = 'title'
     }
 
-    renderer = afx`
-        <div>
-            {props.title}
-        </div>
-    `
+    renderer = Neos.Fusion:Tag {
+        tagName = 'div'
+        attributes = Neos.Fusion:Attributes {
+            class = Neos.Fusion:DataStructure {
+                class1 = 'headline'
+                class2 = ${'headline-' + q(node).property('alignment')}
+            }
+        }
+        content = ${title}
+    }
 }

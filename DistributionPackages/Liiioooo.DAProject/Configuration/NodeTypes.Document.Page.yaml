@@ -6,11 +6,19 @@
     label: 'Page'
   constraints:
     nodeTypes:
-      'Neos.NodeTypes:Page': false
+      'Neos.Neos:Document': false
+      'Neos.Neos:Shortcut': false
       'Liiioooo.DAProject:Document.Homepage': false
       'Liiioooo.DAProject:Document.NotFoundPage': false
+      'Liiioooo.DAProject:ExternalLink': false
       'Liiioooo.DAProject:Content.Main': true
   childNodes:
+    header:
+      type: 'Liiioooo.DAProject:Collection.Content.Header'
+      constraints:
+        nodeTypes:
+          '*': false
+          'Liiioooo.DAProject:Content.ImageHero': true
     main:
       type: 'Liiioooo.DAProject:Collection.Content.Main'
       constraints:

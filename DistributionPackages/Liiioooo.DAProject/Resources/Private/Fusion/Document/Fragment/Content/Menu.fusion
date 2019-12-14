@@ -13,7 +13,8 @@ prototype(Liiioooo.DAProject:Document.Fragment.Menu) < prototype(Neos.Fusion:Com
                 <div class="nav-items">
                     <Neos.Fusion:Loop items={props.menuItems}>
                         <span class={item.state}>
-                            <Neos.Neos:NodeLink node={item.node}>{item.label}</Neos.Neos:NodeLink>
+                            <Neos.Neos:NodeLink node={item.node} @if.isInternal={!q(item.node).property('targetUrl')}>{item.label}</Neos.Neos:NodeLink>
+                            <a @if.isExternal={q(item.node).property('targetUrl')} href={q(item.node).property('targetUrl')} target="_blank">{item.label}</a>
                         </span>
                     </Neos.Fusion:Loop>
                 </div>

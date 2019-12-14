@@ -1,0 +1,24 @@
+'Liiioooo.DAProject:ExternalLink':
+  superTypes:
+    'Neos.Neos:Shortcut': true
+  ui:
+    icon: 'icon-external-link-alt'
+    label: 'External Link'
+  constraints:
+    nodeTypes:
+      'Neos.Neos:Document': false
+      'Neos.Neos:Shortcut': false
+      'Liiioooo.DAProject:Document.Homepage': false
+      'Liiioooo.DAProject:Document.Page': false
+      'Liiioooo.DAProject:Document.NotFoundPage': false
+      'Liiioooo.DAProject:ExternalLink': false
+  properties:
+    targetUrl:
+      type: string
+      ui:
+        label: 'Target Url'
+        reloadPageIfChanged: true
+        inspector:
+          group: 'document'
+      validation:
+        'Neos.Neos/Validation/NotEmptyValidator': []

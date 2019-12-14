@@ -1,0 +1,39 @@
+'Liiioooo.DAProject:Content.FooterLink':
+  superTypes:
+    Neos.Neos:Content: true
+  ui:
+    label: 'Footer Link'
+    icon: 'icon-external-link-alt'
+    position: 100
+    inspector:
+      groups:
+        general:
+          label: 'General'
+  properties:
+    'label':
+      type: string
+      ui:
+        label: 'Label'
+        reloadIfChanged: true
+        inspector:
+          group: 'general'
+      validation:
+        'Neos.Neos/Validation/NotEmptyValidator': []
+
+    'targetUrl':
+      type: string
+      ui:
+        label: 'Traget Url'
+        reloadIfChanged: true
+        inspector:
+          group: 'general'
+      validation:
+        'Neos.Neos/Validation/NotEmptyValidator': []
+
+    'newWindow':
+        type: boolean
+        ui:
+          label: 'Open in new Window'
+          reloadIfChanged: true
+          inspector:
+            group: 'general'
