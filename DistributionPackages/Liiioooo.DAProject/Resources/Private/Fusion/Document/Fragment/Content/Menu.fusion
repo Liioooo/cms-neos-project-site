@@ -1,0 +1,23 @@
+prototype(Liiioooo.DAProject:Document.Fragment.Menu) < prototype(Neos.Fusion:Component) {
+    menuItems = Neos.Neos:MenuItems
+    homeImage = Neos.Neos:ImageUri {
+        asset = ${q(site).closest("[instanceof Liiioooo.DAProject:Document.Homepage]").property('menuHomeImage')}
+    }
+
+    renderer = afx`
+        <nav class="main-nav">
+            <div class="menu">
+                <a href="/">
+                    <img src={props.homeImage} class="home-img"/>
+                </a>
+                <div class="nav-items">
+                    <Neos.Fusion:Loop items={props.menuItems}>
+                        <span class={item.state}>
+                            <Neos.Neos:NodeLink node={item.node}>{item.label}</Neos.Neos:NodeLink>
+                        </span>
+                    </Neos.Fusion:Loop>
+                </div>
+            </div>
+        </nav>
+    `
+}

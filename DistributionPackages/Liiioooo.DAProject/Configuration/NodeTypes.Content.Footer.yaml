@@ -1,0 +1,7 @@
+'Liiioooo.DAProject:Content.Footer':
+  superTypes:
+    Neos.Neos:Content: true
+  ui:
+    label: 'Footer Content'
+    icon: 'align-justify'
+    position: 100

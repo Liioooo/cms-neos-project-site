@@ -4,4 +4,4 @@
   constraints:
     nodeTypes:
       '*': false
-      'Liiioooo.DAProject:Constraint.UsableAsContent': true
+      'Liiioooo.DAProject:ContentFooter': true

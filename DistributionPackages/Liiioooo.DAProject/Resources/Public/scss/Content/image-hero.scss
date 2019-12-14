@@ -1,0 +1,27 @@
+@import "../variables";
+
+.image-hero {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primaryColor;
+
+    img {
+        width: 1000px;
+        margin: 5rem 0;
+
+        @media screen and (max-width: 1200px) {
+            width: 800px;
+        }
+        @media screen and (max-width: 1000px) {
+            width: 600px;
+        }
+        @media screen and (max-width: 700px) {
+            width: 500px;
+        }
+        @media screen and (max-width: 600px) {
+            width: 80%;
+        }
+    }
+}

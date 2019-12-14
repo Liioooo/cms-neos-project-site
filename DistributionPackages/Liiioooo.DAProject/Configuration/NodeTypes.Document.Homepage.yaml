@@ -4,8 +4,33 @@
   ui:
     icon: 'globe'
     label: 'Home'
+    inspector:
+      groups:
+        image:
+          label: i18n
+          position: 200
+          icon: 'icon-image'
   childNodes:
     'notfound':
       type: 'Liiioooo.DAProject:Document.NotFoundPage'
     'footer':
       type: 'Liiioooo.DAProject:Collection.Content.Footer'
+      constraints:
+        nodeTypes:
+          '*': false
+          'Liiioooo.DAProject:Content.Footer': true
+  properties:
+    'menuHomeImage':
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: 'Menu Home Image'
+        reloadIfChanged: true
+        inspector:
+          group: 'image'
+          position: 50
+          editorOptions:
+            crop:
+              aspectRatio:
+                locked:
+                  width: 2
+                  height: 1

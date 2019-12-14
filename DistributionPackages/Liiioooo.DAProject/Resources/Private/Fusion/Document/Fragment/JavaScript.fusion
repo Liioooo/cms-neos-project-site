@@ -3,6 +3,5 @@
  */
 prototype(Liiioooo.DAProject:Document.Fragment.JavaScripts) < prototype(Neos.Fusion:Component) {
     renderer = afx`
-        <Liiioooo.DAProject:Helper.ScriptTag path="resource://Neos.Twitter.Bootstrap/Public/Libraries/jQuery/jquery-1.10.1.min.js" />
     `
 }

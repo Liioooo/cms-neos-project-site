@@ -1,31 +1,19 @@
 prototype(Liiioooo.DAProject:Document.Page) < prototype(Neos.Fusion:Component) {
 
+    menu = Liiioooo.DAProject:Document.Fragment.Menu
     mainContent = Liiioooo.DAProject:Document.Fragment.Content.Main
-    #footerContent = Liiioooo.DAProject:Document.Fragment.Content.Footer
+    footerContent = Liiioooo.DAProject:Document.Fragment.Content.Footer
 
     bodyClass = 'body'
 
     renderer = Liiioooo.DAProject:Document.Base {
         bodyClass = ${props.bodyClass}
         body = afx`
-            <div class="top-navigation-wrap">
-                <div class="container">
-                </div>
-            </div>
-
-            <div class="container">
+            {props.menu}
+            <main>
                 {props.mainContent}
-            </div>
-
-            <footer role="navigation" class="navbar navbar-default">
-                <div class="panel panel-default">
-                    <div class="panel-footer">
-                        <div class="container">
-                            {props.footerContent}
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            </main>
+            {props.footerContent}
         `
     }
 }

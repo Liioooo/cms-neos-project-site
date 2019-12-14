@@ -1,0 +1,6 @@
+prototype(Liiioooo.DAProject:Content.Footer) < prototype(Neos.Neos:ContentComponent) {
+    renderer = afx`
+        <footer class="footer">
+        </footer>
+    `
+}
