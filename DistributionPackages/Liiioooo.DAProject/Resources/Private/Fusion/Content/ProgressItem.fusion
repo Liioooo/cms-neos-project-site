@@ -1,0 +1,18 @@
+prototype(Liiioooo.DAProject:Content.ProgressItem) < prototype(Neos.Neos:ContentComponent) {
+    @context {
+        name = Neos.Neos:Editable {
+            property = 'name'
+        }
+
+        progress = ${q(node).property('progress')}
+    }
+
+    renderer = afx`
+    <div class="progress-item">
+        <div class="progress-item-name">{name}</div>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow={progress} style={'width: ' + progress + '%;'} aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+    `
+}

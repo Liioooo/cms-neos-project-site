@@ -1,0 +1,35 @@
+@import "../variables";
+
+.project-progress {
+    text-align: center;
+    padding: 4rem 0;
+    margin-top: 5rem;
+    background-color: $projectProgressBackground;
+
+    .project-progress-container {
+        max-width: 1200px;
+        margin: auto;
+
+        .project-progress-header-headline {
+            margin-bottom: 2rem;
+
+            h1, h2 {
+                text-transform: none;
+            }
+        }
+
+        .project-progress-header-subline {
+            h4 {
+                text-transform: none;
+            }
+        }
+
+        .project-progress-items {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 3rem 0;
+        }
+    }
+}

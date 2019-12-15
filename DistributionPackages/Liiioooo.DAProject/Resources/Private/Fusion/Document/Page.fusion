@@ -13,7 +13,7 @@ prototype(Liiioooo.DAProject:Document.Page) < prototype(Neos.Fusion:Component) {
             <div class="menu-and-content">
                 {props.menu}
                 {props.headerContent}
-                <main class="m-4">
+                <main>
                     {props.mainContent}
                 </main>
             </div>

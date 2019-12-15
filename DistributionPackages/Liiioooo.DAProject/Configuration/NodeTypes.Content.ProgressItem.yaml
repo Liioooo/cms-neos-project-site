@@ -1,0 +1,38 @@
+'Liiioooo.DAProject:Content.ProgressItem':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: 'Progress Item'
+    icon: 'icon-check'
+    position: 200
+    inspector:
+      groups:
+        general:
+          label: 'General'
+  constraints:
+    nodeTypes:
+      '*': false
+  properties:
+    name:
+      type: string
+      defaultValue: '<h5>Enter Name</h5>'
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            formatting:
+              h5: true
+              a: true
+    progress:
+      type: integer
+      defaultValue: 50
+      ui:
+        label: 'Progress'
+        reloadIfChanged: true
+        inspector:
+          group: 'general'
+          validation:
+            'Neos.Neos/Validation/NotEmptyValidator': []
+            'Neos.Neos/Validation/NumberRangeValidator':
+              minimum: 0
+              maximum: 100

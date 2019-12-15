@@ -1,0 +1,6 @@
+prototype(Shel.Helper:Debug) < prototype(Neos.Fusion:Value) {
+    value = ${value}
+    title = ${node ? node.label : (documentNode ? documentNode.label : 'Untitled')}
+    output = ''
+    @process.addDebugOutput = ${value + '<script>console.log("' + this.title + ':",' + Json.stringify(this.output) + ');</script>'}
+}

@@ -1,0 +1,41 @@
+'Liiioooo.DAProject:Content.ProjectProgress':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Liiioooo.DAProject:Constraint.UsableAsContent': true
+  ui:
+    label: 'Project Progress'
+    icon: 'icon-tasks'
+    position: 200
+    inspector:
+      groups:
+        general:
+          label: 'General'
+  constraints:
+    nodeTypes:
+      'Liiioooo.DAProject:Content.ProgressItem': true
+      '*': false
+  properties:
+    headerHeadline:
+      type: string
+      defaultValue: '<h1>Enter Headline</h1>'
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            formatting:
+              removeFormat: true
+              h1: true
+              h2: true
+              a: true
+    headerSubline:
+      type: string
+      defaultValue: '<h4>Enter Sub-Headline</h4>'
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            formatting:
+              removeFormat: true
+              strong: true
+              h4: true
+              a: true

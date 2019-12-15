@@ -1,11 +1,10 @@
 @import "../variables";
 
 .image-hero {
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient($primaryColor, lighten($primaryColor, 30));
+    background-image: linear-gradient($heroBackground, lighten($heroBackground, 30));
 
     img {
         width: 1000px;

@@ -1,0 +1,17 @@
+.progress-item {
+    width: 400px;
+    padding: 2rem;
+
+    .progress-item-name {
+        text-align: left;
+        margin-bottom: 1rem;
+
+        h5 {
+            text-transform: none;
+        }
+    }
+
+    .progress {
+        height: 0.5rem;
+    }
+}
