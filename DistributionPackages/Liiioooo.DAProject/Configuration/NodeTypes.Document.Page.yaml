@@ -4,6 +4,12 @@
   ui:
     icon: 'icon-file'
     label: 'Page'
+    inspector:
+      groups:
+        image:
+          label: 'Menu Home Image'
+          position: 200
+          icon: 'icon-image'
   constraints:
     nodeTypes:
       'Neos.Neos:Document': false
@@ -26,3 +32,13 @@
         nodeTypes:
           '*': false
           'Liiioooo.DAProject:Constraint.UsableAsContent': true
+  properties:
+    homeImageNavbar:
+      type: boolean
+      defaultValue: true
+      ui:
+        label: 'Show Navbar Home-Image'
+        reloadIfChanged: true
+        inspector:
+          group: 'image'
+

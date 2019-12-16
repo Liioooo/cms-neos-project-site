@@ -4,12 +4,6 @@
   ui:
     icon: 'globe'
     label: 'Home'
-    inspector:
-      groups:
-        image:
-          label: 'Menu Home Image'
-          position: 200
-          icon: 'icon-image'
   childNodes:
     'notfound':
       type: 'Liiioooo.DAProject:Document.NotFoundPage'
@@ -28,7 +22,7 @@
     'menuHomeImage':
       type: 'Neos\Media\Domain\Model\ImageInterface'
       ui:
-        label: 'Menu Home Image'
+        label: 'Navbar Home-Image'
         reloadIfChanged: true
         inspector:
           group: 'image'

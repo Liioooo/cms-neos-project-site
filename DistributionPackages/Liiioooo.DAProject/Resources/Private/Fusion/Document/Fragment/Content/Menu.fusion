@@ -3,11 +3,12 @@ prototype(Liiioooo.DAProject:Document.Fragment.Menu) < prototype(Neos.Fusion:Com
     homeImage = Neos.Neos:ImageUri {
         asset = ${q(site).closest("[instanceof Liiioooo.DAProject:Document.Homepage]").property('menuHomeImage')}
     }
+    @context.showHomeImage = ${q(node).closest("[instanceof Liiioooo.DAProject:Document.Page]").property('homeImageNavbar')}
 
     renderer = afx`
         <nav class="main-nav">
             <div class="menu">
-                <a href="/">
+                <a href="/" @if.has={showHomeImage}>
                     <img src={props.homeImage} class="home-img"/>
                 </a>
                 <div class="nav-items">
