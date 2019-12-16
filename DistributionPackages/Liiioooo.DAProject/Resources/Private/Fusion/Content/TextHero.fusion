@@ -1,0 +1,11 @@
+prototype(Liiioooo.DAProject:Content.TextHero) < prototype(Neos.Neos:ContentComponent) {
+    @context.headline = Neos.Neos:Editable {
+        property = 'headline'
+    }
+
+    renderer = afx`
+        <div class="text-hero">
+            {headline}
+        </div>
+    `
+}

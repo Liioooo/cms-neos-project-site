@@ -19,6 +19,7 @@
         nodeTypes:
           '*': false
           'Liiioooo.DAProject:Content.ImageHero': true
+          'Liiioooo.DAProject:Content.TextHero': true
     main:
       type: 'Liiioooo.DAProject:Collection.Content.Main'
       constraints:

@@ -1,0 +1,19 @@
+'Liiioooo.DAProject:Content.TextHero':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: 'Text Hero'
+    icon: 'icon-header'
+    position: 100
+  properties:
+    'headline':
+      type: string
+      defaultValue: '<h1>Enter Headline</h1>'
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            formatting:
+              removeFormat: true
+              h1: true
+              a: true

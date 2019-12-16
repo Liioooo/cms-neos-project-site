@@ -12,14 +12,14 @@
 
         .project-progress-header-headline {
             margin-bottom: 2rem;
-            > * {
-                color: $projectProgressHeadlineFontColor;
+            * {
+                color: $projectProgressHeadlineFontColor !important;
             }
         }
 
         .project-progress-header-subline {
-            > * {
-                color: $projectProgressHeadlineFontColor;
+            * {
+                color: $projectProgressHeadlineFontColor !important;
             }
         }
 

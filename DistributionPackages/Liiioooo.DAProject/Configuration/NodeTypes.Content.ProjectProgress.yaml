@@ -38,4 +38,6 @@
               removeFormat: true
               strong: true
               h4: true
+              h5: true
+              h6: true
               a: true

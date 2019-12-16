@@ -1,0 +1,17 @@
+@import "../variables";
+
+.text-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient($heroBackground, lighten($heroBackground, 30));
+    text-align: center;
+    word-break: break-all;
+
+    h1 {
+        font-size: 3rem;
+        margin: 5rem 1rem;
+        font-weight: 300;
+        max-width: 1200px;
+    }
+}

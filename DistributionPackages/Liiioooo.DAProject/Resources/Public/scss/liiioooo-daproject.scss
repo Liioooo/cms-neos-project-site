@@ -8,11 +8,16 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: none;
 }
 
+b, strong {
+    font-weight: bold;
+}
+
 @import "Document/page";
 @import "Document/Fragment/menu";
 
 @import "Content/footer";
 @import "Content/image-hero";
+@import "Content/text-hero";
 @import "Content/headline";
 @import "Content/text";
 @import "Content/project-progress";
