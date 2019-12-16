@@ -12,15 +12,14 @@
 
         .project-progress-header-headline {
             margin-bottom: 2rem;
-
-            h1, h2 {
-                text-transform: none;
+            > * {
+                color: $projectProgressHeadlineFontColor;
             }
         }
 
         .project-progress-header-subline {
-            h4 {
-                text-transform: none;
+            > * {
+                color: $projectProgressHeadlineFontColor;
             }
         }
 

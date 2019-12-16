@@ -3,6 +3,7 @@
 .main-nav {
     height: 4rem;
     background-color: $menuBackground;
+    color: $menuFontColor;
 
     .menu {
         display: flex;
@@ -16,6 +17,7 @@
         a {
             align-self: center;
             margin: 0 .5rem;
+            color: $menuFontColor;
 
             .home-img {
                 height: 2.5rem;

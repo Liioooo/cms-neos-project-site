@@ -1,6 +1,9 @@
+@import "../variables";
+
 .text {
-   margin: auto;
-   max-width: 1200px;
+    margin: auto;
+    max-width: 1200px;
+    color: $textFontColor;
 
     &-left {
         text-align: left;

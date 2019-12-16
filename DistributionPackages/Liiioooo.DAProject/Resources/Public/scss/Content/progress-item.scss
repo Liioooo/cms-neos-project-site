@@ -1,3 +1,5 @@
+@import "../variables";
+
 .progress-item {
     width: 400px;
     padding: 2rem;
@@ -5,13 +7,17 @@
     .progress-item-name {
         text-align: left;
         margin-bottom: 1rem;
-
-        h5 {
-            text-transform: none;
+         > * {
+            color: $projectProgressItemNameFontColor;
         }
     }
 
     .progress {
         height: 0.5rem;
+        background-color: $projectProgressItemBarBackgroundColor;
+
+        .progress-bar {
+            background-color: $projectProgressItemBarColor;
+        }
     }
 }

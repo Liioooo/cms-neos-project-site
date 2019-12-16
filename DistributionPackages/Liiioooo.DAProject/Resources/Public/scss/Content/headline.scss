@@ -1,7 +1,9 @@
+@import "../variables";
+
 .headline {
     h1, h2, h3, h4, h5 {
-        text-transform: none;
         margin: 3rem;
+        color: $textFontColor;
     }
 
     &-left {
