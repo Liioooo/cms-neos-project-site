@@ -5,6 +5,27 @@
     label: 'Footer Content'
     icon: 'align-justify'
     position: 100
+    inspector:
+      groups:
+        general:
+          label: 'General'
   constraints:
     nodeTypes:
       'Liiioooo.DAProject:Content.FooterLink': true
+  properties:
+    showCopyrightNotice:
+      type: boolean
+      ui:
+        label: 'Show Copyright Notice'
+        reloadIfChanged: true
+        inspector:
+          group: 'general'
+          position: 10
+    copyrightNotice:
+      type: string
+      ui:
+        label: 'Copyright Notice'
+        reloadIfChanged: true
+        inspector:
+          group: 'general'
+          position: 20

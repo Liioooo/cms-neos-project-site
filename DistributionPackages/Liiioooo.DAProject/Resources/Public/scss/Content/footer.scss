@@ -1,15 +1,30 @@
 @import "../variables";
 
 .footer {
-    height: 10rem;
-    background-color: $footerBackground;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $footerFontColor;
 
-    a {
-        margin: 0 2rem;
+    .footer-links {
+        height: 10rem;
+        background-color: $footerBackground;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: $footerFontColor;
+
+        a {
+            margin: 0 2rem;
+            color: $footerFontColor;
+        }
+    }
+
+    .copyright-notice {
+        height: 4rem;
+        background-color: $copyRightNoticeBackgroundColor;
+        text-align: center;
+        line-height: 4rem;
+
+        p {
+            margin: 0;
+            color: $copyRightNoticeColor;
+        }
     }
 }

@@ -3,9 +3,14 @@ prototype(Liiioooo.DAProject:Content.Footer) < prototype(Neos.Neos:ContentCompon
 
     renderer = afx`
         <div class="footer">
-            <Neos.Fusion:Loop items={props.footerLinks}>
-               <a href={q(item).property('targetUrl')} target={q(item).property('newWindow') == true ? '_blank' : '_self'}>{q(item).property('label')}</a>
-            </Neos.Fusion:Loop>
+            <div class="footer-links">
+                <Neos.Fusion:Loop items={props.footerLinks}>
+                    <a href={q(item).property('targetUrl')} target={q(item).property('newWindow') == true ? '_blank' : '_self'}>{q(item).property('label')}</a>
+                </Neos.Fusion:Loop>
+            </div>
+            <div class="copyright-notice" @if.has={q(node).property('showCopyrightNotice')}>
+                <p>{q(node).property('copyrightNotice')}</p>
+            </div>
         </div>
     `
 }

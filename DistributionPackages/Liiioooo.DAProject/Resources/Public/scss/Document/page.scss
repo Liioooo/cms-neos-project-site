@@ -1,5 +1,8 @@
 .body {
-    .menu-and-content {
+    .menu-and-content-no-copyright {
         min-height: calc(100vh - 10rem);
+    }
+    .menu-and-content-with-copyright {
+        min-height: calc(100vh - 14rem);
     }
 }

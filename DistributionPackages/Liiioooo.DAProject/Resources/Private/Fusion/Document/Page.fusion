@@ -1,24 +1,28 @@
 prototype(Liiioooo.DAProject:Document.Page) < prototype(Neos.Fusion:Component) {
 
-    menu = Liiioooo.DAProject:Document.Fragment.Menu
-    headerContent = Liiioooo.DAProject:Document.Fragment.Content.Header
-    mainContent = Liiioooo.DAProject:Document.Fragment.Content.Main
-    footerContent = Liiioooo.DAProject:Document.Fragment.Content.Footer
+    @context {
+        menu = Liiioooo.DAProject:Document.Fragment.Menu
+        headerContent = Liiioooo.DAProject:Document.Fragment.Content.Header
+        mainContent = Liiioooo.DAProject:Document.Fragment.Content.Main
+        footerContent = Liiioooo.DAProject:Document.Fragment.Content.Footer
+
+        menuAndContentClass = ${q(site).children('footer').children().property('showCopyrightNotice') ? 'menu-and-content-with-copyright' : 'menu-and-content-no-copyright'}
+    }
 
     bodyClass = 'body'
 
     renderer = Liiioooo.DAProject:Document.Base {
         bodyClass = ${props.bodyClass}
         body = afx`
-            <div class="menu-and-content">
-                {props.menu}
-                {props.headerContent}
+            <div class={menuAndContentClass}>
+                {menu}
+                {headerContent}
                 <main>
-                    {props.mainContent}
+                    {mainContent}
                 </main>
             </div>
             <footer>
-                {props.footerContent}
+                {footerContent}
             </footer>
         `
     }
