@@ -10,25 +10,26 @@ $heroBackground: #27ae60;
 
 
 // Normal Text and Headlines ------------------
-$textFontColor: #1a1a1a;
+$textFontColor: #111A12;
 // --------------------------------------------
 
 
 //projectProgress -----------------------------
-$projectProgressBackground: #20BAB7;
-$projectProgressHeadlineFontColor: #1a1a1a;
-$projectProgressItemNameFontColor: #1a1a1a;
-$projectProgressItemBarColor: #1a1a1a;
-$projectProgressItemBarBackgroundColor: #f7f7f9;
+$projectProgressBackground: #111a12;
+$projectProgressHeadlineFontColor: #fafcfa;
+$projectProgressItemNameFontColor: #fafcfa;
+$projectProgressItemBarColor: rgb(39, 174, 96);
+$projectProgressItemBarBackgroundColor: #fafcfa;
 // --------------------------------------------
 
 
 //footer --------------------------------------
-$footerBackground: #27ae60;
-$footerFontColor: #1a1a1a;
+$footerBackground: #252E26;
+$footerFontColor: #8c979e;
 // --------------------------------------------
 
 // Bootstrap Variable Overrides ---------------
-// variables can be found in: 'node_modules/bootswatch/dist/lux/variables'
-
+// variables can be found in: 'node_modules/bootswatch/dist/lux/variables.scss' and 'node_modules/bootstrap/scss/_variable.scss'
+$web-font-path: 'https://fonts.googleapis.com/css?family=Roboto:300&display=swap';
+$font-family-sans-serif: 'Roboto', sans-serif;
 // --------------------------------------------
