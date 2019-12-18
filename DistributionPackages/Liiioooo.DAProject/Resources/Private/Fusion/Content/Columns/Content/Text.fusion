@@ -1,0 +1,4 @@
+prototype(Liiioooo.DAProject:Content.Columns.Content.Text) < prototype(Liiioooo.DAProject:Content.Text) {
+
+    renderer.attributes.class.class3 = 'p-0'
+}

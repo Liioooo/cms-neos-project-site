@@ -2,10 +2,11 @@ prototype(Liiioooo.DAProject:Content.ImageHero) < prototype(Neos.Neos:ContentCom
     imageSrc = Neos.Neos:ImageUri {
         asset = ${q(node).property('image')}
     }
+    altText = ${q(node).property('alternativeText')}
 
     renderer = afx`
         <div class="image-hero">
-            <img src={props.imageSrc} />
+            <img src={props.imageSrc} alt={props.altText} />
         </div>
     `
 }

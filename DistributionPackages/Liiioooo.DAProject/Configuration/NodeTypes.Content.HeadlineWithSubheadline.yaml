@@ -1,0 +1,17 @@
+'Liiioooo.DAProject:Content.HeadlineWithSubheadline':
+  superTypes:
+    'Liiioooo.DAProject:Content.Headline': true
+  ui:
+    label: 'Headline with Subheadline'
+    icon: 'icon-header'
+    position: 100
+  properties:
+    'subheadline':
+      defaultValue: '<p>Enter Sub-Headline</p>'
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            formatting:
+              p: true
+              a: true

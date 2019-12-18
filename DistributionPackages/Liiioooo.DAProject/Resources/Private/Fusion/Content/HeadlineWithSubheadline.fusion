@@ -1,0 +1,12 @@
+prototype(Liiioooo.DAProject:Content.HeadlineWithSubheadline) < prototype(Liiioooo.DAProject:Content.Headline) {
+    @context.subheadline = Neos.Neos:Editable {
+        property = 'subheadline'
+    }
+
+    renderer.attributes.class.class3 = 'with-subheadline'
+
+    renderer.content = Neos.Fusion:Join {
+        title = ${title}
+        subheadline = ${subheadline}
+    }
+}

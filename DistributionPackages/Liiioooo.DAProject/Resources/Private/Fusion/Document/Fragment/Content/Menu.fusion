@@ -8,9 +8,11 @@ prototype(Liiioooo.DAProject:Document.Fragment.Menu) < prototype(Neos.Fusion:Com
     renderer = afx`
         <nav class="main-nav">
             <div class="menu">
-                <a href="/" @if.has={showHomeImage}>
-                    <img src={props.homeImage} class="home-img"/>
-                </a>
+                <div>
+                    <a href="/" @if.has={showHomeImage}>
+                        <img src={props.homeImage} class="home-img"/>
+                    </a>
+                </div>
                 <div class="nav-items">
                     <Neos.Fusion:Loop items={props.menuItems}>
                         <span class={item.state}>

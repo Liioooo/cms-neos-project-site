@@ -1,0 +1,7 @@
+'Liiioooo.DAProject:Collection.Content.Column':
+  superTypes:
+    Neos.Neos:ContentCollection: true
+  constraints:
+    nodeTypes:
+      '*': false
+      'Liiioooo.DAProject:Constraint.UsableAsColumn': true

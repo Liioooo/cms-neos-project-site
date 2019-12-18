@@ -1,0 +1,9 @@
+'Liiioooo.DAProject:Content.Columns.Content.Text':
+  superTypes:
+    'Liiioooo.DAProject:Content.Text': true
+    'Liiioooo.DAProject:Constraint.UsableAsContent': false
+    'Liiioooo.DAProject:Constraint.UsableAsColumn': true
+  ui:
+    label: 'Column Text'
+    icon: 'icon-file-text'
+    position: 100

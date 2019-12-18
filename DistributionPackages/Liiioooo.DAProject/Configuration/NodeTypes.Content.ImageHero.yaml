@@ -1,24 +1,8 @@
 'Liiioooo.DAProject:Content.ImageHero':
   superTypes:
     'Neos.Neos:Content': true
+    'Neos.NodeTypes.BaseMixins:ImageMixin': true
   ui:
     label: 'Image Hero'
     icon: 'icon-header'
     position: 100
-    inspector:
-      groups:
-        image:
-          label: 'Image'
-          position: 200
-          icon: 'icon-image'
-  properties:
-    'image':
-      type: 'Neos\Media\Domain\Model\ImageInterface'
-      ui:
-        label: 'Image'
-        icon: 'icon-picture'
-        position: 300
-        reloadIfChanged: true
-        inspector:
-          group: 'image'
-          position: 50

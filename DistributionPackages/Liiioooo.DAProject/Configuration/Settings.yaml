@@ -1,12 +1,4 @@
 Neos:
-  Neos:
-    userInterface:
-      translation:
-        autoInclude:
-          Liiioooo.DAProject:
-            - Main
-            - 'NodeTypes/*'
-
   ContentRepository:
     contentDimensions:
       language:
