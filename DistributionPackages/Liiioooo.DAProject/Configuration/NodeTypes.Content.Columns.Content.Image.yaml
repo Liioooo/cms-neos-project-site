@@ -1,0 +1,9 @@
+'Liiioooo.DAProject:Content.Columns.Content.Image':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.NodeTypes.BaseMixins:ImageMixin': true
+    'Liiioooo.DAProject:Constraint.UsableAsColumn': true
+  ui:
+    label: 'Column Image'
+    icon: 'icon-image'
+    position: 100

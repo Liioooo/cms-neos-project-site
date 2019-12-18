@@ -1,0 +1,12 @@
+prototype(Liiioooo.DAProject:Content.Columns.Content.Image) < prototype(Neos.Neos:ContentComponent) {
+
+    imageSrc = Neos.Neos:ImageUri {
+        asset = ${q(node).property('image')}
+    }
+    altText = ${q(node).property('alternativeText')}
+
+    renderer = afx`
+        <img class="img-fluid pl-3 pr-3 m-auto" src={props.imageSrc} alt={props.altText} />
+    `
+
+}

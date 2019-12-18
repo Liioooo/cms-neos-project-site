@@ -3,6 +3,7 @@
     'Neos.Neos:Content': true
     'Neos.NodeTypes.BaseMixins:TitleMixin': true
     'Liiioooo.DAProject:Constraint.UsableAsContent': true
+    'Liiioooo.DAProject:Constraint.UsableAsColumn': true
   ui:
     label: 'Headline'
     icon: 'icon-header'
