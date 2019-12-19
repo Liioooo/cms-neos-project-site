@@ -1,0 +1,13 @@
+'Liiioooo.DAProject:Content.Columns.Two':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Liiioooo.DAProject:Constraint.UsableAsContent': true
+  ui:
+    label: '2 Column Layout'
+    icon: 'icon-columns'
+    position: 100
+  childNodes:
+    column0:
+      type: 'Liiioooo.DAProject:Collection.Content.Column'
+    column1:
+      type: 'Liiioooo.DAProject:Collection.Content.Column'
