@@ -3,7 +3,8 @@
     "type": "neos-site",
     "require": {
         "neos/neos": "*",
-        "neos/nodetypes": "*"
+        "neos/nodetypes": "*",
+        "shel/neos-colorpicker": "^1.3"
     },
     "suggest": {
         "neos/seo": "*"

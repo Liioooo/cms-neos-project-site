@@ -6,6 +6,7 @@
     label: '2 Column Layout'
     icon: 'icon-columns'
     position: 100
+    group: 'structure'
   childNodes:
     column0:
       type: 'Liiioooo.DAProject:Collection.Content.Column'

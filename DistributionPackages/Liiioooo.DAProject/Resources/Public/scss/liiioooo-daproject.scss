@@ -4,6 +4,10 @@
 @import "../../../../../node_modules/bootstrap/scss/bootstrap";
 @import "../../../../../node_modules/bootswatch/dist/lux/bootswatch";
 
+@import "../../../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+$fa-font-path: "../webfonts";
+
 h1, h2, h3, h4, h5, h6 {
     text-transform: none;
 }
@@ -22,5 +26,6 @@ b, strong {
 @import "Content/text";
 @import "Content/project-progress";
 @import "Content/progress-item";
-@import "Content/columns";
+@import "Content/colums/columns";
+@import "Content/colums/content/icon-headline";
 

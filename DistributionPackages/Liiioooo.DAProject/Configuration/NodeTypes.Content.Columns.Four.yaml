@@ -5,7 +5,8 @@
   ui:
     label: '4 Column Layout'
     icon: 'icon-columns'
-    position: 100
+    position: 300
+    group: 'structure'
   childNodes:
     column0:
       type: 'Liiioooo.DAProject:Collection.Content.Column'

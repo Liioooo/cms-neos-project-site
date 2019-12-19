@@ -1,0 +1,47 @@
+'Liiioooo.DAProject:Content.Columns.Content.IconHeadline':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Liiioooo.DAProject:Constraint.UsableAsColumn': true
+  ui:
+    label: 'Icon Headline'
+    icon: 'icon-file-text'
+    position: 100
+    inspector:
+      groups:
+        general:
+          label: 'General'
+  properties:
+    'headline':
+      defaultValue: '<h4>Enter Headline</h4>'
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            formatting:
+              h4: true
+              h5: true
+              a: true
+    'icon':
+      type: string
+      ui:
+        label: 'Icon'
+        reloadIfChanged: true
+        inspector:
+          group: 'general'
+        help:
+          message: 'You can use every font-awesome icon'
+      validation:
+        'Neos.Neos/Validation/NotEmptyValidator': []
+
+    'color':
+      type: string
+      ui:
+        'label': 'Icon and Font color'
+        'reloadIfChanged': true
+        inspector:
+          group: 'general'
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hex'
+            picker: true
+            fields: true

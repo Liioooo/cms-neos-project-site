@@ -1,0 +1,39 @@
+prototype(Liiioooo.DAProject:Content.Columns.Content.IconHeadline) < prototype(Neos.Neos:ContentComponent) {
+    @context {
+        headline = Neos.Neos:Editable {
+            property = 'headline'
+        }
+        icon = ${q(node).property('icon')}
+        color = ${q(node).property('color')}
+    }
+
+    renderer = Neos.Fusion:Tag {
+        tagName = 'div'
+        attributes.class = 'icon-headline'
+        content = Neos.Fusion:Join {
+
+            iconCont = Neos.Fusion:Tag {
+                tagName = 'div'
+                content = Neos.Fusion:Tag {
+                    attributes {
+                        style = ${'color: ' + color}
+                        class = Neos.Fusion:DataStructure {
+                            class1 = 'fa'
+                            iconClass = ${icon}
+                        }
+                    }
+                    tagName = 'i'
+                }
+            }
+
+            headline = Neos.Fusion:Tag {
+                tagName = 'div'
+                attributes {
+                    class = 'icon-headline-headline'
+                    style = ${'color: ' + color}
+                }
+                content = ${headline}
+            }
+        }
+    }
+}
