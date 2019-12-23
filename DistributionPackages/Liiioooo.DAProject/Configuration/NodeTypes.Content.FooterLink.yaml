@@ -1,14 +1,11 @@
 'Liiioooo.DAProject:Content.FooterLink':
   superTypes:
     Neos.Neos:Content: true
+    'Liiioooo.DAProject:Mixin.GeneralGroup': true
   ui:
     label: 'Footer Link'
     icon: 'icon-external-link-alt'
     position: 100
-    inspector:
-      groups:
-        general:
-          label: 'General'
   properties:
     'label':
       type: string

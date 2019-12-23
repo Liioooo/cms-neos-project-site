@@ -1,14 +1,11 @@
 'Liiioooo.DAProject:Content.Footer':
   superTypes:
     Neos.Neos:Content: true
+    'Liiioooo.DAProject:Mixin.GeneralGroup': true
   ui:
     label: 'Footer Content'
     icon: 'align-justify'
     position: 100
-    inspector:
-      groups:
-        general:
-          label: 'General'
   constraints:
     nodeTypes:
       'Liiioooo.DAProject:Content.FooterLink': true

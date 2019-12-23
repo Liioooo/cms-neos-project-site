@@ -1,0 +1,7 @@
+'Liiioooo.DAProject:Mixin.GeneralGroup':
+  abstract: true
+  ui:
+    inspector:
+      groups:
+        general:
+          label: 'General'

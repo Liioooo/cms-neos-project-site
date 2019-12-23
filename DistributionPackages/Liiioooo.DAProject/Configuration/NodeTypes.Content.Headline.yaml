@@ -2,16 +2,13 @@
   superTypes:
     'Neos.Neos:Content': true
     'Neos.NodeTypes.BaseMixins:TitleMixin': true
+    'Liiioooo.DAProject:Mixin.GeneralGroup': true
     'Liiioooo.DAProject:Constraint.UsableAsContent': true
     'Liiioooo.DAProject:Constraint.UsableAsColumn': true
   ui:
     label: 'Headline'
     icon: 'icon-header'
     position: 100
-    inspector:
-      groups:
-        general:
-          label: 'General'
   properties:
     'title':
       ui:

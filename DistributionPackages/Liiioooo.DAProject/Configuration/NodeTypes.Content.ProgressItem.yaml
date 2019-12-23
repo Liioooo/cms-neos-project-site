@@ -1,14 +1,11 @@
 'Liiioooo.DAProject:Content.ProgressItem':
   superTypes:
     'Neos.Neos:Content': true
+    'Liiioooo.DAProject:Mixin.GeneralGroup': true
   ui:
     label: 'Progress Item'
     icon: 'icon-check'
     position: 200
-    inspector:
-      groups:
-        general:
-          label: 'General'
   constraints:
     nodeTypes:
       '*': false

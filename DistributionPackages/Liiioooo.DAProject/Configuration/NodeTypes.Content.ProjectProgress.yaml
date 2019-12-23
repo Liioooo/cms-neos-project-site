@@ -2,14 +2,11 @@
   superTypes:
     'Neos.Neos:Content': true
     'Liiioooo.DAProject:Constraint.UsableAsContent': true
+    'Liiioooo.DAProject:Mixin.GeneralGroup': true
   ui:
     label: 'Project Progress'
     icon: 'icon-tasks'
     position: 200
-    inspector:
-      groups:
-        general:
-          label: 'General'
   constraints:
     nodeTypes:
       'Liiioooo.DAProject:Content.ProgressItem': true

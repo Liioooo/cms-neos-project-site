@@ -6,10 +6,6 @@
     label: 'Icon Headline'
     icon: 'icon-file-text'
     position: 100
-    inspector:
-      groups:
-        general:
-          label: 'General'
   properties:
     'headline':
       defaultValue: '<h4>Enter Headline</h4>'

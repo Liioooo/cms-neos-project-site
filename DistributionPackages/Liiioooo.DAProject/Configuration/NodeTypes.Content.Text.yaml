@@ -1,16 +1,13 @@
 'Liiioooo.DAProject:Content.Text':
   superTypes:
     'Neos.Neos:Content': true
+    'Liiioooo.DAProject:Mixin.GeneralGroup': true
     'Neos.NodeTypes.BaseMixins:TextMixin': true
     'Liiioooo.DAProject:Constraint.UsableAsContent': true
   ui:
     label: Text
     icon: 'icon-file-text'
     position: 200
-    inspector:
-      groups:
-        general:
-          label: 'General'
   properties:
     'alignment':
       type: string
