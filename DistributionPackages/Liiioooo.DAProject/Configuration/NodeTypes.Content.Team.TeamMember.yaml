@@ -1,0 +1,53 @@
+'Liiioooo.DAProject:Content.Team.TeamMember':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.NodeTypes.BaseMixins:ImageMixin': true
+    'Liiioooo.DAProject:Mixin.GeneralGroup': true
+  ui:
+    label: 'Team Member'
+    icon: 'icon-user'
+    position: 500
+  constraints:
+    nodeTypes:
+      '*': false
+  properties:
+    name:
+      type: string
+      defaultValue: '<h6>Enter Name</h6>'
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            formatting:
+              h6: true
+    role:
+      type: string
+      defaultValue: '<p>Enter Role</p>'
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            formatting:
+              p: true
+
+    github:
+      type: string
+      ui:
+        label: 'GitHub Url'
+        reloadPageIfChanged: true
+        inspector:
+          group: 'general'
+    linkedIn:
+      type: string
+      ui:
+        label: 'LinkedIn Url'
+        reloadPageIfChanged: true
+        inspector:
+          group: 'general'
+    instagram:
+      type: string
+      ui:
+        label: 'Instagram Url'
+        reloadPageIfChanged: true
+        inspector:
+          group: 'general'

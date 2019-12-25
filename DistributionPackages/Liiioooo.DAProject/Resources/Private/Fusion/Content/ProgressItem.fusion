@@ -1,4 +1,4 @@
-prototype(Liiioooo.DAProject:Content.ProgressItem) < prototype(Neos.Neos:ContentComponent) {
+prototype(Liiioooo.DAProject:Content.ProjectProgress.ProgressItem) < prototype(Neos.Neos:ContentComponent) {
     @context {
         name = Neos.Neos:Editable {
             property = 'name'

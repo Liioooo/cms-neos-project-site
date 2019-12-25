@@ -1,4 +1,4 @@
-'Liiioooo.DAProject:Content.ProgressItem':
+'Liiioooo.DAProject:Content.ProjectProgress.ProgressItem':
   superTypes:
     'Neos.Neos:Content': true
     'Liiioooo.DAProject:Mixin.GeneralGroup': true

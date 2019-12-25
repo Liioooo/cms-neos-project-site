@@ -2,6 +2,7 @@
   superTypes:
     'Neos.Neos:Content': true
     'Liiioooo.DAProject:Constraint.UsableAsColumn': true
+    'Liiioooo.DAProject:Mixin.GeneralGroup': true
   ui:
     label: 'Icon Headline'
     icon: 'icon-file-text'

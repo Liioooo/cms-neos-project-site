@@ -1,0 +1,26 @@
+@import "../variables";
+
+.team-member {
+    width: 400px;
+
+    .team-member-name {
+        * {
+            font-size: 1rem !important;
+            color: $teamMemberNameColor !important;
+        }
+    }
+
+    .team-member-role {
+        * {
+            color: $teamMemberRoleColor !important;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .team-member-social {
+        i {
+            border-color: $teamMemberSocialIconColor !important;
+            color: $teamMemberSocialIconColor !important;
+        }
+    }
+}

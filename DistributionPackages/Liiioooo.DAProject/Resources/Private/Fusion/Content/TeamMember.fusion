@@ -1,0 +1,49 @@
+prototype(Liiioooo.DAProject:Content.Team.TeamMember) < prototype(Neos.Neos:ContentComponent) {
+    @context {
+        name = Neos.Neos:Editable {
+            property = 'name'
+        }
+
+        role = Neos.Neos:Editable {
+            property = 'role'
+        }
+
+        github = ${q(node).property('github')}
+        linkedIn = ${q(node).property('linkedIn')}
+        instagram = ${q(node).property('instagram')}
+
+        imageSrc = Neos.Fusion:Case {
+            image {
+                condition = ${q(node).property('image') ? true : false}
+                renderer = Neos.Neos:ImageUri {
+                    asset = ${q(node).property('image')}
+                }
+            }
+
+            dummyImage {
+                condition = ${true}
+                renderer = Neos.Fusion:ResourceUri {
+                    path = 'resource://Neos.Neos/Public/Images/dummy-image.svg'
+                }
+            }
+
+        }
+        imageAltText = ${q(node).property('alternativeText')}
+
+    }
+
+    renderer = afx`
+    <div class="team-member d-flex p-3 p-3">
+        <img src={imageSrc} alt={imageAltText} class="w-25 rounded-circle" />
+        <div class="w-75 text-left align-self-center pl-3">
+            <span class="team-member-name">{name}</span>
+            <span class="team-member-role">{role}</span>
+            <div class="team-member-social">
+                <a @if.has={github} href={github}><i class="fab fa-github border rounded-circle p-1 mr-2"></i></a>
+                <a @if.has={linkedIn} href={linkedIn}><i class="fab fa-linkedin-in border rounded-circle p-1 mr-2"></i></a>
+                <a @if.has={instagram} href={instagram}><i class="fab fa-instagram border rounded-circle p-1 mr-2"></i></a>
+            </div>
+        </div>
+    </div>
+    `
+}

@@ -1,0 +1,40 @@
+prototype(Liiioooo.DAProject:Content.Team) < prototype(Neos.Neos:ContentComponent) {
+    @context.headerHeadline = Neos.Neos:Editable {
+        property = 'headerHeadline'
+    }
+    @context.headerSubline = Neos.Neos:Editable {
+        property = 'headerSubline'
+    }
+
+    renderer = Neos.Fusion:Tag {
+        tagName = 'div'
+        attributes.class = 'team'
+
+        content = Neos.Fusion:Tag {
+            attributes.class = 'team-container'
+            content = Neos.Fusion:Join {
+                headerHeadline = Neos.Fusion:Tag {
+                    tagName = 'div'
+                    attributes {
+                        class = 'team-header-headline'
+                    }
+                    content = ${headerHeadline}
+                }
+
+                headerSubline = Neos.Fusion:Tag {
+                    tagName = 'div'
+                    attributes {
+                        class = 'team-header-subline'
+                    }
+                    content = ${headerSubline}
+                }
+
+                teamMembers = Neos.Fusion:Tag {
+                    tagName = 'div'
+                    attributes.class = 'team-members'
+                    content = Neos.Neos:ContentCollectionRenderer
+                }
+            }
+        }
+    }
+}

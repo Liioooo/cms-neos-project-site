@@ -1,4 +1,18 @@
 Neos:
+  Flow:
+    mvc:
+      routes:
+        'Neos.Neos':
+          variables:
+            'defaultUriSuffix': ''
+    error:
+      exceptionHandler:
+        renderingGroups:
+          notFoundExceptions:
+            options:
+              variables:
+                path: '404'
+
   ContentRepository:
     contentDimensions:
       language:

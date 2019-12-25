@@ -1,15 +1,14 @@
-'Liiioooo.DAProject:Content.ProjectProgress':
+'Liiioooo.DAProject:Content.Team':
   superTypes:
     'Neos.Neos:Content': true
     'Liiioooo.DAProject:Constraint.UsableAsContent': true
-    'Liiioooo.DAProject:Mixin.GeneralGroup': true
   ui:
-    label: 'Project Progress'
-    icon: 'icon-tasks'
-    position: 200
+    label: 'Team'
+    icon: 'icon-users'
+    position: 500
   constraints:
     nodeTypes:
-      'Liiioooo.DAProject:Content.ProjectProgress.ProgressItem': true
+      'Liiioooo.DAProject:Content.Team.TeamMember': true
       '*': false
   properties:
     headerHeadline:
@@ -26,7 +25,7 @@
               a: true
     headerSubline:
       type: string
-      defaultValue: '<h4>Enter Sub-Headline</h4>'
+      defaultValue: '<p>Enter Sub-Headline</p>'
       ui:
         inlineEditable: true
         inline:
@@ -34,7 +33,5 @@
             formatting:
               removeFormat: true
               strong: true
-              h4: true
-              h5: true
-              h6: true
+              p: true
               a: true

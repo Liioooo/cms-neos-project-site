@@ -6,6 +6,7 @@
 
 @import "../../../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
 @import "../../../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../../../../node_modules/@fortawesome/fontawesome-free/scss/brands";
 $fa-font-path: "../webfonts";
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,6 +27,8 @@ b, strong {
 @import "Content/text";
 @import "Content/project-progress";
 @import "Content/progress-item";
+@import "Content/team";
+@import "Content/team-member";
 @import "Content/colums/columns";
 @import "Content/colums/content/icon-headline";
 
