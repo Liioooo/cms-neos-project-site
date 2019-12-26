@@ -1,0 +1,32 @@
+'Liiioooo.DAProject:Content.Documents.Document':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Liiioooo.DAProject:Mixin.GeneralGroup': true
+  ui:
+    label: 'Document'
+    icon: 'icon-file'
+    position: 500
+  constraints:
+    nodeTypes:
+      '*': false
+  properties:
+    name:
+      type: string
+      ui:
+        label: 'Name'
+        position: 100
+        reloadPageIfChanged: true
+        inspector:
+          group: 'general'
+      validation:
+        'Neos.Neos/Validation/NotEmptyValidator': []
+    doc:
+      type: 'Neos\Media\Domain\Model\Asset'
+      ui:
+        label: 'Document'
+        position: 200
+        reloadPageIfChanged: true
+        inspector:
+          group: 'general'
+      validation:
+        'Neos.Neos/Validation/NotEmptyValidator': []

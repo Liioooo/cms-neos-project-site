@@ -1,0 +1,37 @@
+'Liiioooo.DAProject:Content.Documents':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Liiioooo.DAProject:Constraint.UsableAsContent': true
+  ui:
+    label: 'Documents'
+    icon: 'icon-book'
+    position: 600
+  constraints:
+    nodeTypes:
+      'Liiioooo.DAProject:Content.Documents.Document': true
+      '*': false
+  properties:
+    headerHeadline:
+      type: string
+      defaultValue: '<h1>Enter Headline</h1>'
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            formatting:
+              removeFormat: true
+              h1: true
+              h2: true
+              a: true
+    headerSubline:
+      type: string
+      defaultValue: '<p>Enter Sub-Headline</p>'
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            formatting:
+              removeFormat: true
+              strong: true
+              p: true
+              a: true

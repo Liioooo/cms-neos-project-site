@@ -1,0 +1,99 @@
+prototype(Liiioooo.DAProject:Content.Documents) < prototype(Neos.Neos:ContentComponent) {
+    @context {
+        headerHeadline = Neos.Neos:Editable {
+            property = 'headerHeadline'
+        }
+
+        headerSubline = Neos.Neos:Editable {
+            property = 'headerSubline'
+        }
+
+        docs = ${q(node).children()}
+    }
+
+    renderer = Neos.Fusion:Tag {
+        tagName = 'div'
+        attributes.class = 'documents'
+
+        content = Neos.Fusion:Tag {
+            attributes.class = 'documents-container'
+            content = Neos.Fusion:Join {
+                headerHeadline = Neos.Fusion:Tag {
+                    tagName = 'div'
+                    attributes {
+                        class = 'documents-headline'
+                    }
+                    content = ${headerHeadline}
+                }
+
+                headerSubline = Neos.Fusion:Tag {
+                    tagName = 'div'
+                    attributes {
+                        class = 'documents-header-subline'
+                    }
+                    content = ${headerSubline}
+                }
+
+                docs = Neos.Fusion:Tag {
+                    tagName = 'div'
+                    attributes.class = 'documents-docs d-flex justify-content-center align-items-center flex-column mt-3'
+                    content = Neos.Fusion:Loop {
+                        items = ${docs}
+                        itemRenderer = Neos.Fusion:Tag {
+                            tagName = 'a'
+                            @context.docResource = ${q(q(item).property('doc')).property('resource')}
+                            @if.has = ${docResource}
+                            attributes {
+                                href = Neos.Fusion:ResourceUri {
+                                    resource = ${docResource}
+                                }
+                                download = true
+                                class = 'documents-docs-doc border p-3 d-flex align-items-center mb-2'
+                            }
+                            content = Neos.Fusion:Join {
+                                icon = Neos.Fusion:Tag {
+                                    tagName = 'i'
+                                    attributes = Neos.Fusion:Attributes {
+                                        class = Neos.Fusion:DataStructure {
+                                            class1 = 'fa mr-2'
+                                            class2 = Neos.Fusion:Case {
+                                                pdf {
+                                                    condition = ${docResource.fileExtension == 'pdf'}
+                                                    renderer = 'fa-file-pdf'
+                                                }
+                                                word {
+                                                    condition = ${docResource.fileExtension == 'docx' || docResource.fileExtension == 'doc' || docResource.fileExtension == 'odt'}
+                                                    renderer = 'fa-file-word'
+                                                }
+                                                powerPoint {
+                                                    condition = ${docResource.fileExtension == 'ptt' || docResource.fileExtension == 'pttx'}
+                                                    renderer = 'fa-file-powerpoint'
+                                                }
+                                                img {
+                                                    condition = ${docResource.fileExtension == 'png' || docResource.fileExtension == 'jpeg' || docResource.fileExtension == 'jpg' || docResource.fileExtension == 'jpeg' || docResource.fileExtension == 'gif'}
+                                                    renderer = 'fa-file-image'
+                                                }
+                                                video {
+                                                    condition = ${docResource.fileExtension == 'mp4' || docResource.fileExtension == 'avi' || docResource.fileExtension == 'mov' || docResource.fileExtension == 'mkv'}
+                                                    renderer = 'fa-file-video'
+                                                }
+                                                fallback {
+                                                    condition = ${true}
+                                                    renderer = 'fa-file'
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                label = Neos.Fusion:Tag {
+                                    tagName = 'span'
+                                    content = ${q(item).property('name')}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
