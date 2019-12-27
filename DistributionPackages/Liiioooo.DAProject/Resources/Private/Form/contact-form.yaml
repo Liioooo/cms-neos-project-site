@@ -53,7 +53,7 @@ finishers:
       subject: '{subject}'
       recipientAddress: admin@projectsite.com
       recipientName: 'Project Site Admin'
-      senderAddress: '{email}'
+      senderAddress: admin@projectsite.com
       senderName: '{name}'
       format: plaintext
       testMode: false
@@ -61,5 +61,5 @@ finishers:
     identifier: 'Neos.Form:Confirmation'
     options:
       message: >
-        <h3>Thank you for your feedback</h3>
+        <h3 class="mt-5">Thank you for your feedback</h3>
         <p>We will process it as soon as possible.</p>
