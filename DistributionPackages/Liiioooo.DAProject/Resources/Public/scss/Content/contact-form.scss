@@ -46,7 +46,12 @@
             }
 
             .form-group {
+                label {
+                    color: $contactFormFormControlLabelFontColor !important;
+                }
+
                 .invalid-feedback {
+                    color: $contactFormErrorColor !important;
                     font-size: 14px;
                     text-align: left;
                 }
@@ -54,6 +59,11 @@
 
             .form-control {
                 background-color: $contactFormFormControlBackgroundColor !important;
+                color: $contactFormFormControlFontColor !important;
+
+                &.is-invalid {
+                    border-color: $contactFormErrorColor !important;
+                }
             }
 
             .form-navigation ul {
