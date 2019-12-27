@@ -31,6 +31,7 @@ prototype(Liiioooo.DAProject:Content.ContactForm) < prototype(Neos.Neos:ContentC
 
                 form = Neos.NodeTypes.Form:Form {
                     formIdentifier = 'contact-form'
+                    presetName = 'contactForm'
                 }
             }
         }

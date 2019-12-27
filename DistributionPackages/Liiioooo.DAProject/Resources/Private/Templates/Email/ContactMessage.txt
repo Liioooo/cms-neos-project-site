@@ -1,0 +1,5 @@
+New Message from DA Project Site Contact Form:
+
+<f:for each="{form.formState.formValues}" as="value" key="label">
+	{label}: {value}
+</f:for>

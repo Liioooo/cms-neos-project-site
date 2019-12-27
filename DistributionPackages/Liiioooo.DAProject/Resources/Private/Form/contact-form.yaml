@@ -7,7 +7,6 @@ renderables:
   -
     type: 'Neos.Form:Page'
     identifier: page-one
-    label: Contact
     renderables:
       -
         type: 'Neos.Form:SingleLineText'
@@ -50,14 +49,13 @@ finishers:
   -
     identifier: 'Neos.Form:Email'
     options:
-      templatePathAndFilename: resource://Liiioooo.DAProject/Private/Templates/Email/ConatactMessage.html
+      templatePathAndFilename: resource://Liiioooo.DAProject/Private/Templates/Email/ContactMessage.txt
       subject: '{subject}'
-      recipientAddress: office@example.net
-      recipientName: 'Office of Company'
+      recipientAddress: admin@projectsite.com
+      recipientName: 'Project Site Admin'
       senderAddress: '{email}'
       senderName: '{name}'
-      replyToAddress: office@example.net
-      format: html
+      format: plaintext
       testMode: false
   -
     identifier: 'Neos.Form:Confirmation'

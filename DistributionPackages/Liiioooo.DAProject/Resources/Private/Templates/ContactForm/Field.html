@@ -1,19 +1,16 @@
 {namespace form=Neos\Form\ViewHelpers}
 <f:validation.results for="{element.identifier}">
-    <div class="kek {f:if(condition: validationResults.flattenedErrors, then: ' error')}"<f:if condition="{element.rootForm.renderingOptions.previewMode}"> data-element="{form:form.formElementRootlinePath(renderable:element)}"</f:if>>
-    <label for="{element.uniqueIdentifier}">{element -> form:translateElementProperty(property: 'label') -> f:format.nl2br()}<f:if condition="{element.required}"><f:render partial="Neos.Form:Field/Required" /></f:if></label>
+    <div class="form-group {f:if(condition: '{element.type} == "Neos.Form:SingleLineText"', then: 'single-line')} {f:if(condition: validationResults.flattenedErrors, then: ' error')}"<f:if condition="{element.rootForm.renderingOptions.previewMode}"> data-element="{form:form.formElementRootlinePath(renderable:element)}"</f:if>>
+    <label class="float-left" for="{element.uniqueIdentifier}">{element -> form:translateElementProperty(property: 'label') -> f:format.nl2br()}<f:if condition="{element.required}"><f:render partial="Neos.Form:Field/Required" /></f:if></label>
     <div class="{element.properties.containerClassAttribute}">
         <f:render section="field" />
         <f:if condition="{validationResults.flattenedErrors}">
-				<span class="help-inline">
+				<div class="invalid-feedback">
 					<f:for each="{validationResults.errors}" as="error">
 						{error -> f:translate(id: '{error.code}', arguments: error.arguments, package: '{element.renderingOptions.validationErrorTranslationPackage}', source: 'ValidationErrors')}
 						<br />
 					</f:for>
-				</span>
-        </f:if>
-        <f:if condition="{element.properties.elementDescription}">
-            <span class="help-block">{element -> form:translateElementProperty(property: 'elementDescription')}</span>
+				</div>
         </f:if>
     </div>
     </div>

@@ -17,13 +17,21 @@ Neos:
     yamlPersistenceManager:
       savePath: 'resource://Liiioooo.DAProject/Private/Form/'
     presets:
-      bootstrap:
-        title: 'Bootstrap'
+      contactForm:
+        title: 'Contact Form'
         parentPreset: default
         formElementTypes:
           'Neos.Form:Base':
             renderingOptions:
               layoutPathPattern: 'resource://Liiioooo.DAProject/Private/Templates/ContactForm/{@type}.html'
+          'Neos.Form:FormElement':
+            properties:
+              elementClassAttribute: form-control
+              elementErrorClassAttribute: is-invalid
+          'Neos.Form:MultiLineText':
+            properties:
+              elementClassAttribute: form-control
+              elementErrorClassAttribute: is-invalid
 
   ContentRepository:
     contentDimensions:

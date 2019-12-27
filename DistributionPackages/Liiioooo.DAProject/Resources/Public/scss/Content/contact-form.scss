@@ -2,11 +2,12 @@
 
 .contact-form {
     text-align: center;
-    padding: 4rem 0;
+    padding: 4rem 0 6rem;
     background-color: $contactFromBackground;
 
     .contact-form-container {
         max-width: 1200px;
+        padding: 0 2rem;
         margin: auto;
 
         .contact-form-header-headline {
@@ -19,6 +20,54 @@
         .contact-form-header-subline {
             * {
                 color: $contactFromHeadlineFontColor !important;
+            }
+        }
+
+        #contact-form {
+            margin-top: 2rem;
+
+            .form-group.single-line {
+                width: 33.33%;
+                float: left;
+                padding: 1rem;
+
+                &:first-of-type {
+                    padding-left: 0;
+                }
+
+                &:nth-of-type(3) {
+                    padding-right: 0;
+                }
+
+                @media screen and (max-width: 815px) {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+
+            .form-group {
+                .invalid-feedback {
+                    font-size: 14px;
+                    text-align: left;
+                }
+            }
+
+            .form-control {
+                background-color: $contactFormFormControlBackgroundColor !important;
+            }
+
+            .form-navigation ul {
+                list-style: none;
+                margin: 0;
+
+                li {
+                    float: right;
+
+                    button {
+                        margin-left: 1rem;
+                        width: 9rem;
+                    }
+                }
             }
         }
     }
