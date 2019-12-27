@@ -15,19 +15,21 @@
         "bin-dir": "bin"
     },
     "require": {
-        "neos/neos": "~5.0.0",
-        "neos/site-kickstarter": "~5.0.0",
-        "neos/neos-ui": "~5.0",
+        "neos/neos": "^5.1",
+        "neos/site-kickstarter": "^5.1",
+        "neos/neos-ui": "^5.1",
         "neos/seo": "~3.0",
         "neos/fusion-afx": "~1.3",
         "neos/redirecthandler-neosadapter": "~4.0",
         "neos/redirecthandler-databasestorage": "~4.0",
         "neos/redirecthandler-ui": "~2.0",
-        
+
         "neos/setup": "^4.1",
         "neos/neos-setup": "^1.0",
         "liiioooo/daproject": "@dev",
-        "neos/swiftmailer": "^7.1"
+        "neos/swiftmailer": "^7.1",
+        "neos/nodetypes": "^5.1",
+        "neos/neos-ui-compiled": "^5.1"
     },
     "require-dev": {
         "neos/buildessentials": "^6.0",
