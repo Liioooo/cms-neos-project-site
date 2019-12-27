@@ -1,0 +1,33 @@
+'Liiioooo.DAProject:Content.ContactForm':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Liiioooo.DAProject:Constraint.UsableAsContent': true
+  ui:
+    label: 'Contact Form'
+    icon: 'icon-comments'
+    position: 600
+  properties:
+    headerHeadline:
+      type: string
+      defaultValue: '<h1>Contact Us</h1>'
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            formatting:
+              removeFormat: true
+              h1: true
+              h2: true
+              a: true
+    headerSubline:
+      type: string
+      defaultValue: '<p>Enter Sub-Headline</p>'
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            formatting:
+              removeFormat: true
+              strong: true
+              p: true
+              a: true

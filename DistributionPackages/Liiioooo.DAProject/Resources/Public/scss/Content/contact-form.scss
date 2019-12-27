@@ -1,0 +1,25 @@
+@import "../variables";
+
+.contact-form {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: $contactFromBackground;
+
+    .contact-form-container {
+        max-width: 1200px;
+        margin: auto;
+
+        .contact-form-header-headline {
+            margin-bottom: 1rem;
+            * {
+                color: $contactFromHeadlineFontColor !important;
+            }
+        }
+
+        .contact-form-header-subline {
+            * {
+                color: $contactFromHeadlineFontColor !important;
+            }
+        }
+    }
+}

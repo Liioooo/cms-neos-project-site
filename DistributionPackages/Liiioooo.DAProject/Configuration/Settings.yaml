@@ -13,6 +13,18 @@ Neos:
               variables:
                 path: '404'
 
+  Form:
+    yamlPersistenceManager:
+      savePath: 'resource://Liiioooo.DAProject/Private/Form/'
+    presets:
+      bootstrap:
+        title: 'Bootstrap'
+        parentPreset: default
+        formElementTypes:
+          'Neos.Form:Base':
+            renderingOptions:
+              layoutPathPattern: 'resource://Liiioooo.DAProject/Private/Templates/ContactForm/{@type}.html'
+
   ContentRepository:
     contentDimensions:
       language:

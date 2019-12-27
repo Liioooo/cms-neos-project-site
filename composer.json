@@ -26,7 +26,8 @@
         
         "neos/setup": "^4.1",
         "neos/neos-setup": "^1.0",
-        "liiioooo/daproject": "@dev"
+        "liiioooo/daproject": "@dev",
+        "neos/swiftmailer": "^7.1"
     },
     "require-dev": {
         "neos/buildessentials": "^6.0",

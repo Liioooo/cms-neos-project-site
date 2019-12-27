@@ -1,0 +1,67 @@
+type: 'Neos.Form:Form'
+identifier: contact-form
+label: 'Contact Form'
+renderingOptions:
+  submitButtonLabel: Send
+renderables:
+  -
+    type: 'Neos.Form:Page'
+    identifier: page-one
+    label: Contact
+    renderables:
+      -
+        type: 'Neos.Form:SingleLineText'
+        identifier: name
+        label: 'Your Name'
+        validators:
+          - identifier: 'Neos.Flow:NotEmpty'
+        properties:
+          placeholder: Name
+        defaultValue: ''
+      -
+        type: 'Neos.Form:SingleLineText'
+        identifier: email
+        label: 'Your E-Mail'
+        validators:
+          - identifier: 'Neos.Flow:NotEmpty'
+          - identifier: 'Neos.Flow:EmailAddress'
+        properties:
+          placeholder: 'E-Mail'
+        defaultValue: ''
+      -
+        type: 'Neos.Form:SingleLineText'
+        identifier: subject
+        label: 'Subject'
+        validators:
+          - identifier: 'Neos.Flow:NotEmpty'
+        properties:
+          placeholder: 'Subject'
+        defaultValue: ''
+      -
+        type: 'Neos.Form:MultiLineText'
+        identifier: message
+        label: Message
+        validators:
+          - identifier: 'Neos.Flow:NotEmpty'
+        properties:
+          placeholder: 'Your Message'
+        defaultValue: ''
+finishers:
+  -
+    identifier: 'Neos.Form:Email'
+    options:
+      templatePathAndFilename: resource://Liiioooo.DAProject/Private/Templates/Email/ConatactMessage.html
+      subject: '{subject}'
+      recipientAddress: office@example.net
+      recipientName: 'Office of Company'
+      senderAddress: '{email}'
+      senderName: '{name}'
+      replyToAddress: office@example.net
+      format: html
+      testMode: false
+  -
+    identifier: 'Neos.Form:Confirmation'
+    options:
+      message: >
+        <h3>Thank you for your feedback</h3>
+        <p>We will process it as soon as possible.</p>
