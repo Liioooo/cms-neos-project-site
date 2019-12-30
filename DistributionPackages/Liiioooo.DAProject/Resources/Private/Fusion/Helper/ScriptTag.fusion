@@ -3,8 +3,11 @@ prototype(Liiioooo.DAProject:Helper.ScriptTag) < prototype(Neos.Fusion:Component
 
     renderer = Neos.Fusion:Tag {
         tagName = 'script'
-        attributes.src = Neos.Fusion:ResourceUri {
-            path = ${props.path}
+        attributes {
+            defer = true
+            src = Neos.Fusion:ResourceUri {
+                path = ${props.path}
+            }
         }
     }
 }

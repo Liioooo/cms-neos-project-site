@@ -3,5 +3,6 @@
  */
 prototype(Liiioooo.DAProject:Document.Fragment.JavaScripts) < prototype(Neos.Fusion:Component) {
     renderer = afx`
+        <Liiioooo.DAProject:Helper.ScriptTag path="resource://Liiioooo.DAProject/Public/js/index.js"></Liiioooo.DAProject:Helper.ScriptTag>
     `
 }

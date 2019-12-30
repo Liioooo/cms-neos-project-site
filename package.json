@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "styles:watch": "gulp styles:watch",
-    "styles": "gulp styles"
+    "watch": "gulp watch",
+    "dist": "gulp dist --prod"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,12 @@
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.13.0"
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-util": "^3.0.8",
+    "node-sass": "^4.13.0",
+    "typescript": "^3.7.4"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
