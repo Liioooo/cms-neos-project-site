@@ -1,1 +1,1 @@
-console.log("sd"),console.log("sdaasd");
+var scrollToTopButton=document.getElementById("scroll-to-top-btn");window.onscroll=function(){scrollToTopButton&&(document.body.scrollTop>200||document.documentElement.scrollTop>200?scrollToTopButton.style.display="block":scrollToTopButton.style.display="none")},scrollToTopButton&&scrollToTopButton.addEventListener("click",(function(){document.documentElement.scrollTo({behavior:"smooth",top:0})}));

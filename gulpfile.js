@@ -19,8 +19,7 @@ gulp.task('scss', function () {
 
 gulp.task('clean-styles', () => {
     return del([
-        './DistributionPackages/Liiioooo.DAProject/Resources/Public/css/',
-        './DistributionPackages/Liiioooo.DAProject/Resources/Public/js/'
+        './DistributionPackages/Liiioooo.DAProject/Resources/Public/css/'
     ]);
 });
 

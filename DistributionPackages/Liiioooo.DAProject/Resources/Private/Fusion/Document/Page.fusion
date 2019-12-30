@@ -6,7 +6,8 @@ prototype(Liiioooo.DAProject:Document.Page) < prototype(Neos.Fusion:Component) {
         mainContent = Liiioooo.DAProject:Document.Fragment.Content.Main
         footerContent = Liiioooo.DAProject:Document.Fragment.Content.Footer
 
-        menuAndContentClass = ${q(site).children('footer').children().property('showCopyrightNotice') ? 'menu-and-content-with-copyright' : 'menu-and-content-no-copyright'}
+        menuAndContentClass = ${q(documentNode).property('showCopyrightNotice') ? 'menu-and-content-with-copyright' : 'menu-and-content-no-copyright'}
+        showScrollToTop = ${q(documentNode).property('scrollToTop')}
     }
 
     bodyClass = 'body'
@@ -20,6 +21,9 @@ prototype(Liiioooo.DAProject:Document.Page) < prototype(Neos.Fusion:Component) {
                 <main>
                     {mainContent}
                 </main>
+                <button @if.show={showScrollToTop} id="scroll-to-top-btn" class="btn btn-primary" title="Go to top">
+                    <i class="fas fa-angle-up"></i>
+                </button>
             </div>
             <footer>
                 {footerContent}

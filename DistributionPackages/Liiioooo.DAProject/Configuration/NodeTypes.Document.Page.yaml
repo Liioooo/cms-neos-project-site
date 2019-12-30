@@ -1,6 +1,7 @@
 'Liiioooo.DAProject:Document.Page':
   superTypes:
     'Neos.Neos:Document': true
+    'Liiioooo.DAProject:Mixin.GeneralGroup': true
   ui:
     icon: 'icon-file'
     label: 'Page'
@@ -10,6 +11,8 @@
           label: 'Menu Home Image'
           position: 200
           icon: 'icon-image'
+        general:
+          position: 400
   constraints:
     nodeTypes:
       'Neos.Neos:Document': false
@@ -41,4 +44,11 @@
         reloadIfChanged: true
         inspector:
           group: 'image'
-
+    scrollToTop:
+      type: boolean
+      defaultValue: true
+      ui:
+        label: 'Scroll to top button'
+        reloadIfChanged: true
+        inspector:
+          group: 'general'

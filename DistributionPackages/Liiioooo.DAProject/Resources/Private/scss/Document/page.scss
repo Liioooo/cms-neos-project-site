@@ -1,8 +1,36 @@
+@import "../variables";
+
 .body {
+    scroll-behavior: smooth;
+
     .menu-and-content-no-copyright {
         min-height: calc(100vh - 10rem);
     }
+
     .menu-and-content-with-copyright {
         min-height: calc(100vh - 14rem);
+    }
+
+    #scroll-to-top-btn {
+        display: none;
+        position: fixed;
+        bottom: 40px;
+        right: 30px;
+        z-index: 100;
+        background-color: $backToTopButtonColor !important;
+
+        i {
+            color: $backToTopButtonFontColor !important;
+            font-size: 16px;
+        }
+
+        &:hover {
+            background-color: $backToTopButtonHoverColor !important;
+        }
+
+        &:focus {
+            border: none;
+            box-shadow: none;
+        }
     }
 }
