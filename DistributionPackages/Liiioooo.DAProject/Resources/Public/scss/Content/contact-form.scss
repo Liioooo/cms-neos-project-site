@@ -76,6 +76,17 @@
                     button {
                         margin-left: 1rem;
                         width: 9rem;
+                        color: $contactFormButtonFontColor;
+                        background-color: $contactFormButtonColor;
+
+                        &:hover {
+                            background-color: $contactFormButtonHoverColor;
+                        }
+
+                        &:focus {
+                            box-shadow: none;
+                            border-color: transparent;
+                        }
                     }
                 }
             }
