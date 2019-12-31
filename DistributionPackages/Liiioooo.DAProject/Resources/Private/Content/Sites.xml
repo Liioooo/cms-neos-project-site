@@ -5,7 +5,7 @@
             <node identifier="4c56f87d-de5f-4007-86bc-6ce33f6c79cb" nodeName="liiioooodaproject">
                 <variant sortingIndex="100" workspace="live" nodeType="Liiioooo.DAProject:Document.Homepage" version="2" removed="" hidden="" hiddenInIndex="">
                     <dimensions>
-                        <language>en</language>
+                        <language>de</language>
                     </dimensions>
                     <accessRoles __type="array"/>
                     <creationDateTime __type="object" __classname="DateTime">2019-12-13T17:45:49+00:00</creationDateTime>
@@ -19,7 +19,7 @@
                 <node nodeName="header">
                     <variant sortingIndex="100" workspace="live" nodeType="Liiioooo.DAProject:Collection.Content.Header" version="1" removed="" hidden="" hiddenInIndex="">
                         <dimensions>
-                            <language>en</language>
+                            <language>de</language>
                         </dimensions>
                         <accessRoles __type="array"/>
                         <properties/>
@@ -28,7 +28,7 @@
                 <node identifier="fd3e7100-e3e1-d936-b08b-fe8e9835816f" nodeName="footer">
                     <variant sortingIndex="500" workspace="live" nodeType="Liiioooo.DAProject:Collection.Content.Footer" version="1" removed="" hidden="" hiddenInIndex="">
                         <dimensions>
-                            <language>en</language>
+                            <language>de</language>
                         </dimensions>
                         <accessRoles __type="array"/>
                         <creationDateTime __type="object" __classname="DateTime">2019-12-13T18:51:04+00:00</creationDateTime>
@@ -39,7 +39,7 @@
                 <node identifier="54a4b6a3-76fb-953d-9015-d287f6a51196" nodeName="main">
                     <variant sortingIndex="200" workspace="live" nodeType="Liiioooo.DAProject:Collection.Content.Main" version="2" removed="" hidden="" hiddenInIndex="">
                         <dimensions>
-                            <language>en</language>
+                            <language>de</language>
                         </dimensions>
                         <accessRoles __type="array"/>
                         <creationDateTime __type="object" __classname="DateTime">2019-12-13T17:45:49+00:00</creationDateTime>
@@ -51,7 +51,7 @@
                 <node identifier="05fb854a-0ee3-0d23-5f83-58947b0fef88" nodeName="notfound">
                     <variant sortingIndex="400" workspace="live" nodeType="Liiioooo.DAProject:Document.NotFoundPage" version="2" removed="" hidden="" hiddenInIndex="1">
                         <dimensions>
-                            <language>en</language>
+                            <language>de</language>
                         </dimensions>
                         <accessRoles __type="array"/>
                         <creationDateTime __type="object" __classname="DateTime">2019-12-13T18:27:04+00:00</creationDateTime>
@@ -66,7 +66,7 @@
                     <node nodeName="header">
                         <variant sortingIndex="80" workspace="live" nodeType="Liiioooo.DAProject:Collection.Content.Header" version="1" removed="" hidden="" hiddenInIndex="">
                             <dimensions>
-                                <language>en</language>
+                                <language>de</language>
                             </dimensions>
                             <accessRoles __type="array"/>
                             <properties/>
@@ -75,7 +75,7 @@
                     <node identifier="18a40aa1-c194-5edc-b047-127cd0edc2c9" nodeName="main">
                         <variant sortingIndex="100" workspace="live" nodeType="Liiioooo.DAProject:Collection.Content.Main" version="2" removed="" hidden="" hiddenInIndex="">
                             <dimensions>
-                                <language>en</language>
+                                <language>de</language>
                             </dimensions>
                             <accessRoles __type="array"/>
                             <creationDateTime __type="object" __classname="DateTime">2019-12-13T18:27:04+00:00</creationDateTime>
@@ -86,14 +86,14 @@
                         <node identifier="ac5d60da-9275-40fb-8457-e5d4f75c797e" nodeName="node-n4shilgpr0c3f">
                             <variant sortingIndex="100" workspace="live" nodeType="Liiioooo.DAProject:Content.Headline" version="3" removed="" hidden="" hiddenInIndex="">
                                 <dimensions>
-                                    <language>en</language>
+                                    <language>de</language>
                                 </dimensions>
                                 <accessRoles __type="array"/>
                                 <creationDateTime __type="object" __classname="DateTime">2019-12-13T18:27:17+00:00</creationDateTime>
                                 <lastModificationDateTime __type="object" __classname="DateTime">2019-12-13T18:27:26+00:00</lastModificationDateTime>
                                 <lastPublicationDateTime __type="object" __classname="DateTime">2019-12-13T18:27:26+00:00</lastPublicationDateTime>
                                 <properties>
-                                    <title __type="string">&lt;h1&gt;Not found&lt;/h1&gt;</title>
+                                    <title __type="string">&lt;h1&gt;Nicht gefunden&lt;/h1&gt;</title>
                                 </properties>
                             </variant>
                         </node>

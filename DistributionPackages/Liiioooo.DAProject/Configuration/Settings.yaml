@@ -48,8 +48,8 @@ Neos:
       language:
         label: 'Language'
         icon: icon-language
-        default: en
-        defaultPreset: en
+        default: de
+        defaultPreset: de
         presets:
           en:
             label: 'English'
