@@ -1,5 +1,10 @@
 prototype(Liiioooo.DAProject:Document.Fragment.Menu) < prototype(Neos.Fusion:Component) {
     menuItems = Neos.Neos:MenuItems
+
+    langMenuItems = Neos.Neos:DimensionsMenuItems {
+        dimension = 'language'
+    }
+
     homeImage = Neos.Neos:ImageUri {
         asset = ${q(site).closest("[instanceof Liiioooo.DAProject:Document.Homepage]").property('menuHomeImage')}
     }
@@ -9,9 +14,9 @@ prototype(Liiioooo.DAProject:Document.Fragment.Menu) < prototype(Neos.Fusion:Com
         <nav class="main-nav">
             <div class="menu">
                 <div>
-                    <a href="/" @if.has={showHomeImage}>
+                    <Neos.Neos:NodeLink node={site} @if.has={showHomeImage}>
                         <img src={props.homeImage} class="home-img"/>
-                    </a>
+                    </Neos.Neos:NodeLink>
                 </div>
                 <div class="nav-items">
                     <Neos.Fusion:Loop items={props.menuItems}>
@@ -20,6 +25,25 @@ prototype(Liiioooo.DAProject:Document.Fragment.Menu) < prototype(Neos.Fusion:Com
                             <a @if.isExternal={q(item.node).property('targetUrl')} href={q(item.node).property('targetUrl')} target="_blank">{item.label}</a>
                         </span>
                     </Neos.Fusion:Loop>
+
+                    <div id="lang-select">
+                        <div id="current-lang">
+                            <Neos.Fusion:Loop items={props.langMenuItems}>
+                                <span @if.isCurrent={item.state == 'current'} class="label">{item.label}</span>
+                            </Neos.Fusion:Loop>
+                            <span class="arrow-down">▼</span>
+                        </div>
+
+                        <ul id="lang-select-list">
+                            <Neos.Fusion:Loop items={props.langMenuItems}>
+                                <li @if.hasNode={item.node} @if.notCurrent={item.state != 'current'}>
+                                    <Neos.Neos:NodeLink node={item.node} attributes.class="lang-to-select-link">
+                                        <span class="lang-to-select">{item.label}</span>
+                                    </Neos.Neos:NodeLink>
+                                </li>
+                            </Neos.Fusion:Loop>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>

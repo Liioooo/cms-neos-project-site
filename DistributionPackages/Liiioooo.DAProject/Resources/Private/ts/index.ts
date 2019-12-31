@@ -16,3 +16,17 @@ if (scrollToTopButton) {
         });
     });
 }
+
+
+const languageSelect = document.getElementById('lang-select');
+const languageSelectCurrLang = document.getElementById('current-lang');
+const languageSelectList = document.getElementById('lang-select-list');
+
+document.addEventListener('click', e => {
+    if(!languageSelect.contains(e.target as HTMLElement)) {
+        languageSelectList.style.display = 'none';
+    }
+});
+languageSelectCurrLang.addEventListener('click', () => {
+    languageSelectList.style.display = 'block';
+});

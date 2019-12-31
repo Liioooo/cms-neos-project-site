@@ -33,6 +33,45 @@
             span {
                 margin: 0 1rem;
             }
+
+            #lang-select {
+
+                #current-lang {
+                    .label {
+                        margin-right: 0;
+                        padding-right: 0.2rem;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+
+                    .arrow-down {
+                        margin-left: 0;
+                        padding-left: 0.2rem;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                #lang-select-list {
+                    display: none;
+                    list-style: none;
+                    position: absolute;
+                    padding: 0;
+                    margin: 0;
+
+                    .lang-to-select {
+                        margin-left: 1rem;
+                    }
+
+                    .lang-to-select-link {
+                        margin: 0;
+                    }
+                }
+            }
         }
     }
 }
