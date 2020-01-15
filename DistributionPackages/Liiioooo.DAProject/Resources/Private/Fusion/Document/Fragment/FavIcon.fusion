@@ -1,0 +1,176 @@
+prototype(Liiioooo.DAProject:Document.Fragment.FavIcon) < prototype(Neos.Fusion:Component) {
+
+    renderer = Neos.Fusion:Join {
+        @if.hasIcon = ${q(site).property('favIcon')}
+
+        57x57 = Neos.Fusion:Tag {
+            tagName = 'link'
+            attributes {
+                rel = 'apple-touch-icon'
+                sizes = '57x57'
+                href = Neos.Neos:ImageUri {
+                    asset = ${q(site).property('favIcon')}
+                    maximumWidth = '57'
+                    maximumHeight = '57'
+                }
+            }
+        }
+
+        60x60 = Neos.Fusion:Tag {
+            tagName = 'link'
+            attributes {
+                rel = 'apple-touch-icon'
+                sizes = '60x60'
+                href = Neos.Neos:ImageUri {
+                    asset = ${q(site).property('favIcon')}
+                    maximumWidth = '60'
+                    maximumHeight = '60'
+                }
+            }
+        }
+
+        72x72 = Neos.Fusion:Tag {
+            tagName = 'link'
+            attributes {
+                rel = 'apple-touch-icon'
+                sizes = '72x72'
+                href = Neos.Neos:ImageUri {
+                    asset = ${q(site).property('favIcon')}
+                    maximumWidth = '72'
+                    maximumHeight = '72'
+                }
+            }
+        }
+
+        76x76 = Neos.Fusion:Tag {
+            tagName = 'link'
+            attributes {
+                rel = 'apple-touch-icon'
+                sizes = '76x76'
+                href = Neos.Neos:ImageUri {
+                    asset = ${q(site).property('favIcon')}
+                    maximumWidth = '76'
+                    maximumHeight = '76'
+                }
+            }
+        }
+
+        114x114 = Neos.Fusion:Tag {
+            tagName = 'link'
+            attributes {
+                rel = 'apple-touch-icon'
+                sizes = '114x114'
+                href = Neos.Neos:ImageUri {
+                    asset = ${q(site).property('favIcon')}
+                    maximumWidth = '114'
+                    maximumHeight = '114'
+                }
+            }
+        }
+
+        120x120 = Neos.Fusion:Tag {
+            tagName = 'link'
+            attributes {
+                rel = 'apple-touch-icon'
+                sizes = '120x120'
+                href = Neos.Neos:ImageUri {
+                    asset = ${q(site).property('favIcon')}
+                    maximumWidth = '120'
+                    maximumHeight = '120'
+                }
+            }
+        }
+
+        144x144 = Neos.Fusion:Tag {
+            tagName = 'link'
+            attributes {
+                rel = 'apple-touch-icon'
+                sizes = '144x144'
+                href = Neos.Neos:ImageUri {
+                    asset = ${q(site).property('favIcon')}
+                    maximumWidth = '144'
+                    maximumHeight = '144'
+                }
+            }
+        }
+
+        152x152 = Neos.Fusion:Tag {
+            tagName = 'link'
+            attributes {
+                rel = 'apple-touch-icon'
+                sizes = '152x152'
+                href = Neos.Neos:ImageUri {
+                    asset = ${q(site).property('favIcon')}
+                    maximumWidth = '152'
+                    maximumHeight = '152'
+                }
+            }
+        }
+
+        180x180 = Neos.Fusion:Tag {
+            tagName = 'link'
+            attributes {
+                rel = 'apple-touch-icon'
+                sizes = '180x180'
+                href = Neos.Neos:ImageUri {
+                    asset = ${q(site).property('favIcon')}
+                    maximumWidth = '180'
+                    maximumHeight = '180'
+                }
+            }
+        }
+
+
+        16x16 = Neos.Fusion:Tag {
+            tagName = 'link'
+            attributes {
+                rel = 'icon'
+                type = 'image/png'
+                href = Neos.Neos:ImageUri {
+                    asset = ${q(site).property('favIcon')}
+                    maximumWidth = '16'
+                    maximumHeight = '16'
+                }
+            }
+        }
+
+        32x32 = Neos.Fusion:Tag {
+            tagName = 'link'
+            attributes {
+                rel = 'icon'
+                type = 'image/png'
+                href = Neos.Neos:ImageUri {
+                    asset = ${q(site).property('favIcon')}
+                    maximumWidth = '32'
+                    maximumHeight = '32'
+                }
+            }
+        }
+
+        96x96 = Neos.Fusion:Tag {
+            tagName = 'link'
+            attributes {
+                rel = 'icon'
+                type = 'image/png'
+                href = Neos.Neos:ImageUri {
+                    asset = ${q(site).property('favIcon')}
+                    maximumWidth = '96'
+                    maximumHeight = '96'
+                }
+            }
+        }
+
+        chrome = Neos.Fusion:Tag {
+            tagName = 'link'
+            attributes {
+                rel = 'icon'
+                type = 'image/png'
+                href = Neos.Neos:ImageUri {
+                    asset = ${q(site).property('favIcon')}
+                    maximumWidth = '192'
+                    maximumHeight = '192'
+                }
+            }
+        }
+    }
+}

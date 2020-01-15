@@ -4,6 +4,12 @@
   ui:
     icon: 'globe'
     label: 'Home'
+    inspector:
+      groups:
+        favicon:
+          label: 'Favicon'
+          position: 100
+          icon: 'icon-image'
   childNodes:
     'notfound':
       type: 'Liiioooo.DAProject:Document.NotFoundPage'
@@ -32,4 +38,18 @@
               aspectRatio:
                 locked:
                   width: 2
+                  height: 1
+    favIcon:
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: 'Favicon'
+        reloadIfChanged: true
+        inspector:
+          group: 'favicon'
+          position: 20
+          editorOptions:
+            crop:
+              aspectRatio:
+                locked:
+                  width: 1
                   height: 1

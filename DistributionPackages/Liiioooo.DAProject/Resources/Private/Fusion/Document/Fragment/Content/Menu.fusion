@@ -6,7 +6,7 @@ prototype(Liiioooo.DAProject:Document.Fragment.Menu) < prototype(Neos.Fusion:Com
     }
 
     homeImage = Neos.Neos:ImageUri {
-        asset = ${q(site).closest("[instanceof Liiioooo.DAProject:Document.Homepage]").property('menuHomeImage')}
+        asset = ${q(site).property('menuHomeImage')}
     }
     @context.showHomeImage = ${q(node).closest("[instanceof Liiioooo.DAProject:Document.Page]").property('homeImageNavbar')}
 

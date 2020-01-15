@@ -11,6 +11,7 @@ prototype(Liiioooo.DAProject:Document.Base) < prototype(Neos.Fusion:Component) {
             stylesheets {
                 site = Liiioooo.DAProject:Document.Fragment.StyleSheets
             }
+            favIcons = Liiioooo.DAProject:Document.Fragment.FavIcon
             metadata = Liiioooo.DAProject:Document.Fragment.MetaData
         }
 

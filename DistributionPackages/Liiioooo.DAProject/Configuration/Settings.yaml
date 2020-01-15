@@ -1,14 +1,4 @@
 Neos:
-  SwiftMailer:
-    transport:
-      type: 'Swift_SmtpTransport'
-      options:
-        host: '--'
-        port: 'port'
-        encryption: 'tls or ssl'
-        username: '--'
-        password: '--'
-
   Flow:
     mvc:
       routes:

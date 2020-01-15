@@ -1,7 +1,7 @@
-
 Neos:
   Imagine:
     driver: Imagick
+
   Flow:
     persistence:
       backendOptions:
@@ -10,3 +10,13 @@ Neos:
         user: db
         password: db
         host: 127.0.0.1
+
+  SwiftMailer:
+    transport:
+      type: 'Swift_SmtpTransport'
+      options:
+        host: '--'
+        port: 'port'
+        encryption: 'tls or ssl'
+        username: '--'
+        password: '--'
