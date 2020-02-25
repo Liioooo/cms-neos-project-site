@@ -4,7 +4,7 @@ prototype(Liiioooo.DAProject:Document.Fragment.Content.Footer) < prototype(Neos.
         collection = ${q(site).children('footer').children()}
     }
 
-    @process.styles = WebCo.PrototypeStyles:LoadStyles {
+    @process.styles = Lio.PrototypeStyles:LoadStyles {
         file = 'resource://Liiioooo.DAProject/Public/css-single/Content/footer.css'
     }
 }

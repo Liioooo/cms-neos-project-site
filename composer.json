@@ -30,7 +30,7 @@
         "neos/swiftmailer": "^7.1",
         "neos/nodetypes": "^5.1",
         "neos/neos-ui-compiled": "^5.1",
-        "webco/prototypestyles": "@dev"
+        "lio/prototypestyles": "@dev"
     },
     "require-dev": {
         "neos/buildessentials": "^6.0",

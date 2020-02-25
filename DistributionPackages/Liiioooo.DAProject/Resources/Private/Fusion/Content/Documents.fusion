@@ -97,7 +97,7 @@ prototype(Liiioooo.DAProject:Content.Documents) < prototype(Neos.Neos:ContentCom
         }
     }
 
-    @process.styles = WebCo.PrototypeStyles:LoadStyles {
+    @process.styles = Lio.PrototypeStyles:LoadStyles {
         file = 'resource://Liiioooo.DAProject/Public/css-single/Content/documents.css'
     }
 }

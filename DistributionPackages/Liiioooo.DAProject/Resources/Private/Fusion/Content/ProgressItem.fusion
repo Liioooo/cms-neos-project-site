@@ -16,7 +16,7 @@ prototype(Liiioooo.DAProject:Content.ProjectProgress.ProgressItem) < prototype(N
     </div>
     `
 
-    @process.styles = WebCo.PrototypeStyles:LoadStyles {
+    @process.styles = Lio.PrototypeStyles:LoadStyles {
         file = 'resource://Liiioooo.DAProject/Public/css-single/Content/progress-item.css'
     }
 }

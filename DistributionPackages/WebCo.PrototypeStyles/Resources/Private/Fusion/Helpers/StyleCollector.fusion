@@ -1,3 +1,0 @@
-prototype(WebCo.PrototypeStyles:StyleCollector) {
-    @class = 'WebCo\\PrototypeStyles\\FusionObjects\\StyleCollectorImplementation'
-}

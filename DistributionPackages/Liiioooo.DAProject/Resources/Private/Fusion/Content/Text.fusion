@@ -14,7 +14,7 @@ prototype(Liiioooo.DAProject:Content.Text) < prototype(Neos.Neos:ContentComponen
         content = ${text}
     }
 
-    @process.styles = WebCo.PrototypeStyles:LoadStyles {
+    @process.styles = Lio.PrototypeStyles:LoadStyles {
         file = 'resource://Liiioooo.DAProject/Public/css-single/Content/text.css'
     }
 }

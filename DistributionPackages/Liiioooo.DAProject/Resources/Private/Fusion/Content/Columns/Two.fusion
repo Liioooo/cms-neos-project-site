@@ -14,7 +14,7 @@ prototype(Liiioooo.DAProject:Content.Columns.Two) < prototype(Neos.Neos:ContentC
         </div>
     `
 
-    @process.styles = WebCo.PrototypeStyles:LoadStyles {
+    @process.styles = Lio.PrototypeStyles:LoadStyles {
         file = 'resource://Liiioooo.DAProject/Public/css-single/Content/colums/colums.css'
     }
 }

@@ -1,11 +1,11 @@
 <?php
 
 
-namespace WebCo\PrototypeStyles\FusionObjects;
+namespace Lio\PrototypeStyles\FusionObjects;
 
 use Neos\Flow\Annotations as Flow;
 use Neos\Fusion\FusionObjects\AbstractFusionObject;
-use WebCo\PrototypeStyles\Service\PrototypeStyles;
+use Lio\PrototypeStyles\Service\PrototypeStyles;
 
 class StyleCollectorImplementation extends AbstractFusionObject
 {

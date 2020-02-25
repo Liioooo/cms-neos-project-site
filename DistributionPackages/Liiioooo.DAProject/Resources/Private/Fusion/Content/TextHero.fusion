@@ -9,7 +9,7 @@ prototype(Liiioooo.DAProject:Content.TextHero) < prototype(Neos.Neos:ContentComp
         </div>
     `
 
-    @process.styles = WebCo.PrototypeStyles:LoadStyles {
+    @process.styles = Lio.PrototypeStyles:LoadStyles {
         file = 'resource://Liiioooo.DAProject/Public/css-single/Content/text-hero.css'
     }
 }

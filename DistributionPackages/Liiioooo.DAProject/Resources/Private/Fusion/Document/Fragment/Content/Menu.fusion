@@ -49,7 +49,7 @@ prototype(Liiioooo.DAProject:Document.Fragment.Menu) < prototype(Neos.Fusion:Com
         </nav>
     `
 
-    @process.styles = WebCo.PrototypeStyles:LoadStyles {
+    @process.styles = Lio.PrototypeStyles:LoadStyles {
         file = 'resource://Liiioooo.DAProject/Public/css-single/Document/Fragment/menu.css'
     }
 }

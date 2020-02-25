@@ -10,7 +10,7 @@ prototype(Liiioooo.DAProject:Content.ImageHero) < prototype(Neos.Neos:ContentCom
         </div>
     `
 
-    @process.styles = WebCo.PrototypeStyles:LoadStyles {
+    @process.styles = Lio.PrototypeStyles:LoadStyles {
         file = 'resource://Liiioooo.DAProject/Public/css-single/Content/image-hero.css'
     }
 }

@@ -1,0 +1,3 @@
+prototype(Lio.PrototypeStyles:StyleCollector) {
+    @class = 'Lio\\PrototypeStyles\\FusionObjects\\StyleCollectorImplementation'
+}

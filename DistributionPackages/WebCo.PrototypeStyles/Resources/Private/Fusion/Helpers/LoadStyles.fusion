@@ -1,5 +1,0 @@
-prototype(WebCo.PrototypeStyles:LoadStyles) {
-    @class = 'WebCo\\PrototypeStyles\\FusionObjects\\LoadStylesImplementation'
-    content = ${value ? value : ''}
-    file = null
-}

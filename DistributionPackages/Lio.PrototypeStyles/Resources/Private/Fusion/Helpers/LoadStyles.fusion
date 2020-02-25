@@ -1,0 +1,5 @@
+prototype(Lio.PrototypeStyles:LoadStyles) {
+    @class = 'Lio\\PrototypeStyles\\FusionObjects\\LoadStylesImplementation'
+    content = ${value ? value : ''}
+    file = null
+}

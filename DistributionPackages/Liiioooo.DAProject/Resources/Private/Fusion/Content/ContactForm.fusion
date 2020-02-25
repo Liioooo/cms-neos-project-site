@@ -37,7 +37,7 @@ prototype(Liiioooo.DAProject:Content.ContactForm) < prototype(Neos.Neos:ContentC
         }
     }
 
-    @process.styles = WebCo.PrototypeStyles:LoadStyles {
+    @process.styles = Lio.PrototypeStyles:LoadStyles {
         file = 'resource://Liiioooo.DAProject/Public/css-single/Content/contact-form.css'
     }
 

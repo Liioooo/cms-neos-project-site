@@ -1,6 +1,6 @@
 <?php
 
-namespace WebCo\PrototypeStyles\Service;
+namespace Lio\PrototypeStyles\Service;
 
 use Neos\Flow\Annotations as Flow;
 use Neos\Utility\Files;
@@ -15,6 +15,8 @@ class PrototypeStyles
 
 
     public function addStyleFile(string $filePath) {
+        echo $filePath . '<br>';
+
         if (array_key_exists($filePath, $this->styles))
             return;
 
