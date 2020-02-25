@@ -1,0 +1,18 @@
+{
+    "description": "",
+    "type": "neos-package",
+    "name": "webco/prototypestyles",
+    "require": {
+        "neos/flow": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "WebCo\\PrototypeStyles\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "WebCo.PrototypeStyles"
+        }
+    }
+}

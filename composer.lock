@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7d87cf618fe0a2d41108f55eb769d3e",
+    "content-hash": "89273939080f19ebe9685d93b3de67b1",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -1733,8 +1733,7 @@
             "dist": {
                 "type": "path",
                 "url": "./DistributionPackages/Liiioooo.DAProject",
-                "reference": "a3639ec62de1f10ad3b3e21da63579334d33e1fe",
-                "shasum": null
+                "reference": "a3639ec62de1f10ad3b3e21da63579334d33e1fe"
             },
             "require": {
                 "neos/neos": "*",
@@ -7070,6 +7069,29 @@
             "time": "2019-12-02T06:33:10+00:00"
         },
         {
+            "name": "webco/prototypestyles",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./DistributionPackages/WebCo.PrototypeStyles",
+                "reference": "7d99fb7493812026a27f2e42b804d57bc77b329b"
+            },
+            "require": {
+                "neos/flow": "*"
+            },
+            "type": "neos-package",
+            "extra": {
+                "neos": {
+                    "package-key": "WebCo.PrototypeStyles"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WebCo\\PrototypeStyles\\": "Classes/"
+                }
+            }
+        },
+        {
             "name": "zendframework/zend-code",
             "version": "3.4.1",
             "source": {
@@ -7124,6 +7146,7 @@
                 "code",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-code",
             "time": "2019-12-10T19:21:15+00:00"
         },
         {
@@ -7178,6 +7201,7 @@
                 "events",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-eventmanager",
             "time": "2018-04-25T15:33:34+00:00"
         }
     ],
@@ -8784,6 +8808,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "liiioooo/daproject": 20,
+        "webco/prototypestyles": 20,
         "neos/behat": 20
     },
     "prefer-stable": false,

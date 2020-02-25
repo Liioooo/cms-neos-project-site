@@ -13,4 +13,8 @@ prototype(Liiioooo.DAProject:Content.Headline) < prototype(Neos.Neos:ContentComp
         }
         content = ${title}
     }
+
+    @process.styles = WebCo.PrototypeStyles:LoadStyles {
+        file = 'resource://Liiioooo.DAProject/Private/scss/liiioooo-daproject.scss'
+    }
 }

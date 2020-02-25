@@ -1,5 +1,6 @@
 prototype(Liiioooo.DAProject:Document.Fragment.StyleSheets) < prototype(Neos.Fusion:Component) {
     renderer = afx`
         <Liiioooo.DAProject:Helper.StyleTag path="resource://Liiioooo.DAProject/Public/css/liiioooo-daproject.css" />
+        <WebCo.PrototypeStyles:StyleCollector></WebCo.PrototypeStyles:StyleCollector>
     `
 }
