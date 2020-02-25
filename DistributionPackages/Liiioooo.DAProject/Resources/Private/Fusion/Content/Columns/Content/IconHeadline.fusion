@@ -36,4 +36,8 @@ prototype(Liiioooo.DAProject:Content.Columns.Content.IconHeadline) < prototype(N
             }
         }
     }
+
+    @process.styles = WebCo.PrototypeStyles:LoadStyles {
+        file = 'resource://Liiioooo.DAProject/Public/css-single/Content/colums/content/icon-headline.css'
+    }
 }

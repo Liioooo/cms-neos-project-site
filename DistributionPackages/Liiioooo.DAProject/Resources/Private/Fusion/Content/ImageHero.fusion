@@ -9,4 +9,8 @@ prototype(Liiioooo.DAProject:Content.ImageHero) < prototype(Neos.Neos:ContentCom
             <img src={props.imageSrc} alt={props.altText} />
         </div>
     `
+
+    @process.styles = WebCo.PrototypeStyles:LoadStyles {
+        file = 'resource://Liiioooo.DAProject/Public/css-single/Content/image-hero.css'
+    }
 }

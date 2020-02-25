@@ -48,4 +48,8 @@ prototype(Liiioooo.DAProject:Document.Fragment.Menu) < prototype(Neos.Fusion:Com
             </div>
         </nav>
     `
+
+    @process.styles = WebCo.PrototypeStyles:LoadStyles {
+        file = 'resource://Liiioooo.DAProject/Public/css-single/Document/Fragment/menu.css'
+    }
 }

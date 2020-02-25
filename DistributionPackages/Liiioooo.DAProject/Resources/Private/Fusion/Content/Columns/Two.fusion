@@ -13,4 +13,8 @@ prototype(Liiioooo.DAProject:Content.Columns.Two) < prototype(Neos.Neos:ContentC
             <div class="col-md-6 col-12 mb-3 mb-md-0">{props.column1}</div>
         </div>
     `
+
+    @process.styles = WebCo.PrototypeStyles:LoadStyles {
+        file = 'resource://Liiioooo.DAProject/Public/css-single/Content/colums/colums.css'
+    }
 }

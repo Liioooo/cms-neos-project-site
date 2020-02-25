@@ -63,3 +63,9 @@ gulp.task('javascript:watch', function () {
 });
 
 gulp.task('watch', gulp.parallel(['styles:watch', 'javascript:watch']));
+
+gulp.task('scss-single', function () {
+    return gulp.src('./DistributionPackages/Liiioooo.DAProject/Resources/Private/scss/**/*.scss')
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(gulp.dest('./DistributionPackages/Liiioooo.DAProject/Resources/Public/css-single'));
+});

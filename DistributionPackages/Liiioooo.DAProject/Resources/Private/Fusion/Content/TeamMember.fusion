@@ -46,4 +46,8 @@ prototype(Liiioooo.DAProject:Content.Team.TeamMember) < prototype(Neos.Neos:Cont
         </div>
     </div>
     `
+
+    @process.styles = WebCo.PrototypeStyles:LoadStyles {
+        file = 'resource://Liiioooo.DAProject/Public/css-single/Content/team-member.css'
+    }
 }

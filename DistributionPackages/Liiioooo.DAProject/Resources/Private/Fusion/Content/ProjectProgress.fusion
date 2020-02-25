@@ -37,4 +37,8 @@ prototype(Liiioooo.DAProject:Content.ProjectProgress) < prototype(Neos.Neos:Cont
             }
         }
     }
+
+    @process.styles = WebCo.PrototypeStyles:LoadStyles {
+        file = 'resource://Liiioooo.DAProject/Public/css-single/Content/project-progress.css'
+    }
 }

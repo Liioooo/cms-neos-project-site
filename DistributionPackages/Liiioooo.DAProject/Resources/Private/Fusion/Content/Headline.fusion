@@ -15,6 +15,6 @@ prototype(Liiioooo.DAProject:Content.Headline) < prototype(Neos.Neos:ContentComp
     }
 
     @process.styles = WebCo.PrototypeStyles:LoadStyles {
-        file = 'resource://Liiioooo.DAProject/Private/scss/liiioooo-daproject.scss'
+        file = 'resource://Liiioooo.DAProject/Public/css-single/Content/headline.css'
     }
 }

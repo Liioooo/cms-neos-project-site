@@ -8,4 +8,8 @@ prototype(Liiioooo.DAProject:Content.TextHero) < prototype(Neos.Neos:ContentComp
             {headline}
         </div>
     `
+
+    @process.styles = WebCo.PrototypeStyles:LoadStyles {
+        file = 'resource://Liiioooo.DAProject/Public/css-single/Content/text-hero.css'
+    }
 }
