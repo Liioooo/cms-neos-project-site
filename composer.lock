@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "b7d87cf618fe0a2d41108f55eb769d3e",
@@ -1321,6 +1321,7 @@
             "keywords": [
                 "reflection"
             ],
+            "abandoned": "roave/better-reflection",
             "time": "2018-06-14T14:45:07+00:00"
         },
         {
@@ -1733,8 +1734,7 @@
             "dist": {
                 "type": "path",
                 "url": "./DistributionPackages/Liiioooo.DAProject",
-                "reference": "a3639ec62de1f10ad3b3e21da63579334d33e1fe",
-                "shasum": null
+                "reference": "408f563518925ccd044f0d90ba880586b84b84ef"
             },
             "require": {
                 "neos/neos": "*",
@@ -1754,6 +1754,9 @@
                 "psr-4": {
                     "Liiioooo\\DAProject\\": "Classes/"
                 }
+            },
+            "transport-options": {
+                "relative": true
             }
         },
         {
@@ -7032,16 +7035,16 @@
         },
         {
             "name": "typo3fluid/fluid",
-            "version": "2.6.8",
+            "version": "2.6.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/Fluid.git",
-                "reference": "854c3b682aa4d2899f4246276cc60ad52cd8e34e"
+                "reference": "f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/854c3b682aa4d2899f4246276cc60ad52cd8e34e",
-                "reference": "854c3b682aa4d2899f4246276cc60ad52cd8e34e",
+                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc",
+                "reference": "f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc",
                 "shasum": ""
             },
             "require": {
@@ -7067,7 +7070,7 @@
                 "LGPL-3.0-or-later"
             ],
             "description": "The TYPO3 Fluid template rendering engine",
-            "time": "2019-12-02T06:33:10+00:00"
+            "time": "2020-11-16T21:38:14+00:00"
         },
         {
             "name": "zendframework/zend-code",
@@ -7124,6 +7127,7 @@
                 "code",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-code",
             "time": "2019-12-10T19:21:15+00:00"
         },
         {
@@ -7178,6 +7182,7 @@
                 "events",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-eventmanager",
             "time": "2018-04-25T15:33:34+00:00"
         }
     ],
@@ -7938,6 +7943,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
@@ -8789,5 +8795,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
